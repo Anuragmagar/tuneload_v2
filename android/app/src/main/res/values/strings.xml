@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="music_widget_description">TuneLoad Mini (4x1)</string>
+    <string name="music_widget_description_expanded">TuneLoad Now Playing (4x2)</string>
+    <string name="music_widget_artwork">Current track artwork</string>
+    <string name="music_widget_previous">Previous</string>
+    <string name="music_widget_play_pause">Play or pause</string>
+    <string name="music_widget_next">Next</string>
+</resources>

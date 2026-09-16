@@ -1,0 +1,1188 @@
+﻿{
+  "@@locale": "uk",
+  "appTitle": "TuneLoad",
+  "updateDownloadedBanner": "ÐžÐ½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾. ÐŸÐµÑ€ÐµÐ·Ð°Ð¿ÑƒÑÑ‚Ñ–Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ, Ñ‰Ð¾Ð± Ð·Ð°ÑÑ‚Ð¾ÑÑƒÐ²Ð°Ñ‚Ð¸.",
+  "restart": "ÐŸÐµÑ€ÐµÐ·Ð°Ð¿ÑƒÑÑ‚Ñ–Ñ‚ÑŒ",
+  "dismiss": "Ð’Ñ–Ð´Ñ…Ð¸Ð»Ð¸Ñ‚Ð¸",
+  "newVersionAvailableBanner": "ÐÐ¾Ð²Ð° Ð²ÐµÑ€ÑÑ–Ñ {version} Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð° Ð½Ð° GitHub.",
+  "@newVersionAvailableBanner": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "download": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸",
+  "later": "ÐŸÑ–Ð·Ð½Ñ–ÑˆÐµ",
+  "home": "Ð´Ð¾Ð´Ð¾Ð¼Ñƒ",
+  "songs": "ÐŸÑ–ÑÐ½Ñ–",
+  "library": "Ð‘Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÐ°",
+  "folders": "ÐŸÐ°Ð¿ÐºÐ¸",
+  "settings": "ÐÐ°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "searchSettingsHint": "ÐÐ°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð¿Ð¾ÑˆÑƒÐºÑƒ...",
+  "noMatchingSettings": "ÐÐµÐ¼Ð°Ñ” Ð²Ñ–Ð´Ð¿Ð¾Ð²Ñ–Ð´Ð½Ð¸Ñ… Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½ÑŒ",
+  "appearance": "Ð—Ð¾Ð²Ð½Ñ–ÑˆÐ½Ñ–Ð¹ Ð²Ð¸Ð³Ð»ÑÐ´",
+  "theme": "Ð¢ÐµÐ¼Ð°",
+  "themeAuto": "ÐÐ²Ñ‚Ð¾",
+  "themeLight": "ÑÐ²Ñ–Ñ‚Ð»Ð¾",
+  "themeDark": "Ð¢ÐµÐ¼Ð½Ð¸Ð¹",
+  "dynamicColorsNote": "ÐšÐ¾Ð»ÑŒÐ¾Ñ€Ð¸ Ð´Ð¸Ð½Ð°Ð¼Ñ–Ñ‡Ð½Ð¾ Ð°Ð´Ð°Ð¿Ñ‚ÑƒÑŽÑ‚ÑŒÑÑ Ð´Ð¾ Ð¾Ð±ÐºÐ»Ð°Ð´Ð¸Ð½ÐºÐ¸ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñƒ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ð¾Ñ— ÐºÐ¾Ð¼Ð¿Ð¾Ð·Ð¸Ñ†Ñ–Ñ—.",
+  "language": "ÐœÐ¾Ð²Ð°",
+  "languageSubtitle": "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ð¼Ð¾Ð²Ñƒ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸",
+  "chooseLanguage": "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ð¼Ð¾Ð²Ñƒ",
+  "searchLanguagesHint": "ÐŸÐ¾ÑˆÑƒÐº Ð¼Ð¾Ð²...",
+  "noMatchingLanguages": "ÐÐµÐ¼Ð°Ñ” Ð²Ñ–Ð´Ð¿Ð¾Ð²Ñ–Ð´Ð½Ð¸Ñ… Ð¼Ð¾Ð²",
+  "useSystemLanguage": "Ð’Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÐ¹Ñ‚Ðµ ÑÐ¸ÑÑ‚ÐµÐ¼Ð½Ñƒ Ð¼Ð¾Ð²Ñƒ",
+  "languageSystem": "Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° Ð·Ð° ÑƒÐ¼Ð¾Ð²Ñ‡Ð°Ð½Ð½ÑÐ¼",
+  "languageEnglish": "Ð°Ð½Ð³Ð»Ñ–Ð¹ÑÑŒÐºÐ°",
+  "languageTurkish": "Ñ‚ÑƒÑ€ÐµÑ†ÑŒÐºÐ°",
+  "languageRussian": "Ñ€Ð¾ÑÑ–Ð¹ÑÑŒÐºÐ°",
+  "languageHindi": "Ð¥Ñ–Ð½Ð´Ñ–",
+  "languageMalayalam": "Ð¼Ð°Ð»Ð°ÑÐ»Ð°Ð¼",
+  "languageTamil": "Ñ‚Ð°Ð¼Ñ–Ð»ÑŒÑÑŒÐºÐ°",
+  "languageKannada": "ÐºÐ°Ð½Ð½Ð°Ð´Ð°",
+  "languageTelugu": "Ð¢ÐµÐ»ÑƒÐ³Ñƒ",
+  "languageSpanish": "Ð†ÑÐ¿Ð°Ð½ÑÑŒÐºÐ°",
+  "languageFrench": "Ñ„Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑŒÐºÐ°",
+  "languageGerman": "ÐÑ–Ð¼ÐµÑ†ÑŒÐºÐ¸Ð¹",
+  "languageIndonesian": "Ñ–Ð½Ð´Ð¾Ð½ÐµÐ·Ñ–Ð¹ÑÑŒÐºÐ°",
+  "languageJapanese": "Ð¯Ð¿Ð¾Ð½ÑÑŒÐºÐ¸Ð¹",
+  "languageKorean": "ÐºÐ¾Ñ€ÐµÐ¹ÑÑŒÐºÐ°",
+  "languageArabic": "Ð°Ñ€Ð°Ð±ÑÑŒÐºÐ°",
+  "languageUkrainian": "ÑƒÐºÑ€Ð°Ñ—Ð½ÑÑŒÐºÐ°",
+  "languageThai": "Ñ‚Ð°Ð¹ÑÑŒÐºÐ°",
+  "languagePortugueseBrazil": "Ð¿Ð¾Ñ€Ñ‚ÑƒÐ³Ð°Ð»ÑŒÑÑŒÐºÐ° (Ð‘Ñ€Ð°Ð·Ð¸Ð»Ñ–Ñ)",
+  "languageChineseSimplified": "ÐšÐ¸Ñ‚Ð°Ð¹ÑÑŒÐºÐ° (ÑÐ¿Ñ€Ð¾Ñ‰ÐµÐ½Ð°)",
+  "languageChineseTraditional": "ÐšÐ¸Ñ‚Ð°Ð¹ÑÑŒÐºÐ° (Ñ‚Ñ€Ð°Ð´Ð¸Ñ†Ñ–Ð¹Ð½Ð°)",
+  "contentLocation": "Ð Ð¾Ð·Ñ‚Ð°ÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ð²Ð¼Ñ–ÑÑ‚Ñƒ",
+  "contentLocationSubtitle": "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ñ€ÐµÐ³Ñ–Ð¾Ð½, ÑÐºÐ¸Ð¹ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ñ–Ð¹ Ñ– Ð½Ð°ÑÐ²Ð½Ð¾ÑÑ‚Ñ– ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ñƒ",
+  "chooseContentLocation": "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ñ€Ð¾Ð·Ñ‚Ð°ÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ð²Ð¼Ñ–ÑÑ‚Ñƒ",
+  "searchLocationsHint": "ÐŸÐ¾ÑˆÑƒÐº Ð¼Ñ–ÑÑ†ÑŒ...",
+  "noMatchingLocations": "ÐÐµÐ¼Ð°Ñ” Ð²Ñ–Ð´Ð¿Ð¾Ð²Ñ–Ð´Ð½Ð¸Ñ… Ð¼Ñ–ÑÑ†ÑŒ",
+  "locationSystem": "Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° Ð·Ð° ÑƒÐ¼Ð¾Ð²Ñ‡Ð°Ð½Ð½ÑÐ¼",
+  "locationUnitedStates": "Ð¡Ð¨Ð",
+  "locationIndia": "Ð†Ð½Ð´Ñ–Ñ",
+  "locationTurkey": "Ð¢ÑƒÑ€ÐµÑ‡Ñ‡Ð¸Ð½Ð°",
+  "locationRussia": "Ð Ð¾ÑÑ–Ñ",
+  "quickActions": "Ð¨Ð²Ð¸Ð´ÐºÑ– Ð´Ñ–Ñ—",
+  "audio": "ÐÑƒÐ´Ñ–Ð¾",
+  "audioQuickActionsSubtitle": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºÐ¾Ð²Ð¾Ð³Ð¾ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ð½Ð½Ñ, ÐºÑ€Ð¾ÑÑ„ÐµÐ¹Ð´ Ñ– Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "downloads": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadsQuickActionsSubtitle": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ, Ñ€Ð¾Ð·Ñ‚Ð°ÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ñ‚Ð° Ð¿Ð°Ð¼â€™ÑÑ‚ÑŒ",
+  "backupRestore": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ðµ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ Ñ‚Ð° Ð²Ñ–Ð´Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ",
+  "backupRestoreQuickActionsSubtitle": "Ð•ÐºÑÐ¿Ð¾Ñ€Ñ‚ÑƒÐ¹Ñ‚Ðµ Ð°Ð±Ð¾ Ñ–Ð¼Ð¿Ð¾Ñ€Ñ‚ÑƒÐ¹Ñ‚Ðµ ÑÐ²Ð¾ÑŽ Ð±Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÑƒ",
+  "streamingQuality": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºÐ¾Ð²Ð¾Ð³Ð¾ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ð½Ð½Ñ",
+  "streamingQualitySubtitle": "ÐÐ°Ð»Ð°ÑˆÑ‚ÑƒÐ¹Ñ‚Ðµ Ð±Ñ–Ñ‚Ñ€ÐµÐ¹Ñ‚ Ð°ÑƒÐ´Ñ–Ð¾ Ð´Ð»Ñ Ð¿Ð¾Ñ‚Ð¾ÐºÐ¾Ð²Ð¾Ð³Ð¾ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ð½Ð½Ñ",
+  "crossfadeTransition": "ÐšÑ€Ð¾ÑÑÑ„ÐµÐ¹Ð´Ð½Ð¸Ð¹ Ð¿ÐµÑ€ÐµÑ…Ñ–Ð´",
+  "crossfadeTransitionSubtitle": "ÐŸÐ»Ð°Ð²Ð½Ðµ Ð·Ð¼Ñ–ÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ñ‚Ñ€ÐµÐºÑ–Ð² Ð¾Ð´Ð½Ð° Ð· Ð¾Ð´Ð½Ð¾ÑŽ",
+  "streamingCache": "ÐŸÐ¾Ñ‚Ð¾ÐºÐ¾Ð²Ð¸Ð¹ ÐºÐµÑˆ",
+  "streamingCacheSubtitle": "ÐŸÐ¾Ð¿ÐµÑ€ÐµÐ´Ð½Ñ” ÐºÐµÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ð¸Ñ… Ñ‚Ñ€ÐµÐºÑ–Ð², Ð¾Ð¿Ñ†Ñ–Ñ Ð»Ð¸ÑˆÐµ Wi-Fi",
+  "downloadQuality": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadQualitySubtitle": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð´Ð»Ñ Ð¾Ñ„Ð»Ð°Ð¹Ð½-Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½ÑŒ",
+  "downloadLocation": "ÐœÑ–ÑÑ†Ðµ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadLocationSubtitle": "Ð”Ðµ Ð·Ð±ÐµÑ€Ñ–Ð³Ð°Ñ”Ñ‚ÑŒÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð° Ð¼ÑƒÐ·Ð¸ÐºÐ°",
+  "dataUsageInfo": "Ð†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð°Ð½Ð½Ñ Ð´Ð°Ð½Ð¸Ñ…",
+  "dataUsageInfoSubtitle": "ÐŸÑ€Ð¸Ð±Ð»Ð¸Ð·Ð½Ð° ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð¿Ð°Ð¼â€™ÑÑ‚Ñ– Ð½Ð° Ð¿Ñ–ÑÐ½ÑŽ",
+  "createBackup": "Ð¡Ñ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ñƒ ÐºÐ¾Ð¿Ñ–ÑŽ",
+  "createBackupSubtitle": "Ð•ÐºÑÐ¿Ð¾Ñ€Ñ‚ÑƒÐ¹Ñ‚Ðµ ÑÐ²Ð¾ÑŽ Ð±Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÑƒ Ñ‚Ð° Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "restoreBackup": "Ð’Ñ–Ð´Ð½Ð¾Ð²Ð¸Ñ‚Ð¸ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ñƒ ÐºÐ¾Ð¿Ñ–ÑŽ",
+  "restoreBackupSubtitle": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð¿Ð¾Ð¿ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ñƒ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ñ— ÐºÐ¾Ð¿Ñ–Ñ—",
+  "connectYoutubeMusic": "ÐŸÑ–Ð´ÐºÐ»ÑŽÑ‡Ñ–Ñ‚ÑŒ YouTube Music",
+  "connectYoutubeMusicSubtitle": "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·ÑƒÐ¹Ñ‚Ðµ Ð²Ð¿Ð¾Ð´Ð¾Ð±Ð°Ð½Ñ– Ð¿Ñ–ÑÐ½Ñ–, ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ñ‚Ð¾Ñ‰Ð¾",
+  "connectYtMusicButton": "ÐŸÑ–Ð´ÐºÐ»ÑŽÑ‡Ñ–Ñ‚ÑŒ YT Music",
+  "downloadsTitle": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "clearCompleted": "ÐžÑ‡Ð¸Ñ‰ÐµÐ½Ð½Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾",
+  "clearFailed": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð¾Ñ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸",
+  "noDownloadsYet": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½ÑŒ Ñ‰Ðµ Ð½ÐµÐ¼Ð°Ñ”",
+  "downloadSongsToListenOffline": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÑƒÐ¹Ñ‚Ðµ Ð¿Ñ–ÑÐ½Ñ– Ð´Ð»Ñ Ð¿Ñ€Ð¾ÑÐ»ÑƒÑ…Ð¾Ð²ÑƒÐ²Ð°Ð½Ð½Ñ Ð¾Ñ„Ð»Ð°Ð¹Ð½",
+  "downloadingTitle": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadedTitle": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾ ({count})",
+  "@downloadedTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "failedTitle": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ",
+  "songsDownloaded": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾ Ð¿Ñ–ÑÐµÐ½ÑŒ: {count}",
+  "@songsDownloaded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "usingStorage": "Ð’Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð°Ð½Ð½Ñ {storage}",
+  "@usingStorage": {
+    "placeholders": {
+      "storage": {
+        "type": "String"
+      }
+    }
+  },
+  "failedWithError": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°: {error}",
+  "@failedWithError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "unknownError": "ÐÐµÐ²Ñ–Ð´Ð¾Ð¼Ð° Ð¿Ð¾Ð¼Ð¸Ð»ÐºÐ°",
+  "removeDownload": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadSettingsTitle": "ÐÐ°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadLocationSubtitleLong": "Ð”Ðµ Ð·Ð±ÐµÑ€Ñ–Ð³Ð°ÑŽÑ‚ÑŒÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ð¼ÑƒÐ·Ð¸Ñ‡Ð½Ñ– Ñ„Ð°Ð¹Ð»Ð¸",
+  "offlineDownloadTip": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ñ‚Ñ€ÐµÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÑŽÑŽÑ‚ÑŒÑÑ Ð±ÐµÐ· Ð†Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚Ñƒ Ñ‚Ð° Ð½Ðµ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑŽÑ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºÐ¾Ð²Ñ– Ð´Ð°Ð½Ñ–.",
+  "estimatedStoragePerSong": "ÐŸÑ€Ð¸Ð±Ð»Ð¸Ð·Ð½Ð¸Ð¹ Ð¾Ð±ÑÑÐ³ Ð¿Ð°Ð¼â€™ÑÑ‚Ñ– Ð½Ð° Ð¿Ñ–ÑÐ½ÑŽ",
+  "storageLocation": "ÐœÑ–ÑÑ†Ðµ Ð·Ð±ÐµÑ€Ñ–Ð³Ð°Ð½Ð½Ñ",
+  "loading": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ...",
+  "errorLoadingPath": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ ÑˆÐ»ÑÑ…Ñƒ",
+  "privateStorageDownloadsNote": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð·Ð±ÐµÑ€Ñ–Ð³Ð°ÑŽÑ‚ÑŒÑÑ Ð² Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð½Ð¾Ð¼Ñƒ ÑÑ…Ð¾Ð²Ð¸Ñ‰Ñ– Ð´Ð¾Ð´Ð°Ñ‚ÐºÐ° Ð´Ð»Ñ ÐºÑ€Ð°Ñ‰Ð¾Ñ— Ð½Ð°Ð´Ñ–Ð¹Ð½Ð¾ÑÑ‚Ñ– Ñ‚Ð° Ð²Ñ–Ð´ÑÑƒÑ‚Ð½Ð¾ÑÑ‚Ñ– Ð²Ð¸Ð¼Ð¾Ð³ Ð´Ð¾ Ð´Ð¾Ð·Ð²Ð¾Ð»Ñƒ.",
+  "qualityAutoChip": "ÐÐ²Ñ‚Ð¾",
+  "qualityLowChip": "ÐÐ¸Ð·ÑŒÐºÐ¸Ð¹",
+  "qualityMediumChip": "Ð¡ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹",
+  "qualityHighChip": "Ð’Ð¸ÑÐ¾ÐºÐ¸Ð¹",
+  "qualityMaxChip": "ÐœÐ°ÐºÑ",
+  "qualityHighest": "ÐÐ°Ð¹Ð²Ð¸Ñ‰Ð¸Ð¹",
+  "qualityDescriptionAuto": "ÐÐ²Ñ‚Ð¾ - Ð°Ð´Ð°Ð¿Ñ‚ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð¾ Ð¼ÐµÑ€ÐµÐ¶Ñ–",
+  "qualityDescriptionLow": "ÐÐ¸Ð·ÑŒÐºÐ¸Ð¹ - ~64 ÐšÐ±Ñ–Ñ‚/Ñ (ÐµÐºÐ¾Ð½Ð¾Ð¼Ð¸Ñ‚ÑŒ Ð¿Ð°Ð¼'ÑÑ‚ÑŒ)",
+  "qualityDescriptionMedium": "Ð¡ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹ - ~128 ÐºÐ±Ñ–Ñ‚/Ñ (Ð·Ð±Ð°Ð»Ð°Ð½ÑÐ¾Ð²Ð°Ð½Ð¸Ð¹)",
+  "qualityDescriptionHigh": "Ð’Ð¸ÑÐ¾ÐºÐ¸Ð¹ - ~256 ÐšÐ±Ñ–Ñ‚/Ñ (Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð¾Ð²Ð°Ð½Ð¾)",
+  "qualityDescriptionMax": "ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ - Ð½Ð°Ð¹Ð²Ð¸Ñ‰Ð¸Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹ (~256 ÐºÐ±Ñ–Ñ‚/Ñ)",
+  "backupRestoreTitle": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ðµ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ Ñ‚Ð° Ð²Ñ–Ð´Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ",
+  "backupIncludesDescription": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ð° ÐºÐ¾Ð¿Ñ–Ñ Ð¼Ñ–ÑÑ‚Ð¸Ñ‚ÑŒ Ð¿Ñ–ÑÐ½Ñ–, ÑÐºÑ– ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ, ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ, Ñ–ÑÑ‚Ð¾Ñ€Ñ–ÑŽ Ð¿Ð¾ÑˆÑƒÐºÑƒ, Ð½ÐµÑ‰Ð¾Ð´Ð°Ð²Ð½Ð¾ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ñ– Ñ‚Ð° ÐºÐ»ÑŽÑ‡Ð¾Ð²Ñ– Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸.",
+  "exportBackup": "Ð•ÐºÑÐ¿Ð¾Ñ€Ñ‚ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ñ— ÐºÐ¾Ð¿Ñ–Ñ—",
+  "exportBackupSubtitle": "Ð—Ð±ÐµÑ€ÐµÐ¶Ñ–Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ñ— ÐºÐ¾Ð¿Ñ–Ñ—, Ñ‰Ð¾Ð± Ð¿Ð¾Ð´Ñ–Ð»Ð¸Ñ‚Ð¸ÑÑ Ð½Ð¸Ð¼ Ð°Ð±Ð¾ Ð·Ð±ÐµÑ€ÐµÐ³Ñ‚Ð¸",
+  "importBackup": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ñ— ÐºÐ¾Ð¿Ñ–Ñ—",
+  "importBackupSubtitle": "Ð’Ñ–Ð´Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ Ð· Ñ„Ð°Ð¹Ð»Ñƒ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ñ— ÐºÐ¾Ð¿Ñ–Ñ—",
+  "dangerZone": "ÐÐµÐ±ÐµÐ·Ð¿ÐµÑ‡Ð½Ð° Ð·Ð¾Ð½Ð°",
+  "clearAppData": "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸ Ð´Ð°Ð½Ñ– Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸",
+  "clearAppDataSubtitle": "Ð¡ÐºÐ¸Ð½ÑƒÑ‚Ð¸ Ð´Ð°Ð½Ñ–/Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸, Ð·Ð±ÐµÑ€Ñ–Ð³Ð°ÑŽÑ‡Ð¸ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ð°ÑƒÐ´Ñ–Ð¾Ñ„Ð°Ð¹Ð»Ð¸",
+  "backupCreatedSuccessfully": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ñƒ ÐºÐ¾Ð¿Ñ–ÑŽ ÑÑ‚Ð²Ð¾Ñ€ÐµÐ½Ð¾ ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾",
+  "backupFailed": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "backupRestoredSuccessfully": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ñƒ ÐºÐ¾Ð¿Ñ–ÑŽ ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ñ–Ð´Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾",
+  "restoreFailed": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð²Ñ–Ð´Ð½Ð¾Ð²Ð¸Ñ‚Ð¸: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "clearAllDataQuestion": "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸ Ð²ÑÑ– Ð´Ð°Ð½Ñ–?",
+  "clearAllDataWarning": "Ð¦Ðµ ÑÐºÐ¸Ð´Ð°Ñ” Ð´Ð°Ð½Ñ– Ñ‚Ð° Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾Ñ— Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸, Ð°Ð»Ðµ Ð·Ð±ÐµÑ€Ñ–Ð³Ð°Ñ” Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ñ„Ð°Ð¹Ð»Ð¸ Ð¿Ñ–ÑÐµÐ½ÑŒ. Ð¦Ðµ Ð½ÐµÐ¼Ð¾Ð¶Ð»Ð¸Ð²Ð¾ ÑÐºÐ°ÑÑƒÐ²Ð°Ñ‚Ð¸.",
+  "cancel": "Ð¡ÐºÐ°ÑÑƒÐ²Ð°Ñ‚Ð¸",
+  "clearAll": "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸ Ð²ÑÐµ",
+  "appDataClearedPreserved": "Ð”Ð°Ð½Ñ– Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸ Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½Ð¾ (Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ð°ÑƒÐ´Ñ–Ð¾Ñ„Ð°Ð¹Ð»Ð¸ Ð·Ð±ÐµÑ€ÐµÐ¶ÐµÐ½Ð¾)",
+  "failedGeneric": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°: {error}",
+  "@failedGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "backupSubject": "Ð ÐµÐ·ÐµÑ€Ð²Ð½Ðµ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ Ð¼ÑƒÐ·Ð¸ÐºÐ¸ TuneLoad",
+  "statisticsTitle": "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°",
+  "statisticsCleared": "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½Ð°",
+  "clearStatistics": "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ",
+  "noStatisticsYet": "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ñ‰Ðµ Ð½ÐµÐ¼Ð°Ñ”",
+  "startListeningStats": "ÐŸÐ¾Ñ‡Ð½Ñ–Ñ‚ÑŒ ÑÐ»ÑƒÑ…Ð°Ñ‚Ð¸, Ñ‰Ð¾Ð± Ð¿Ð¾Ð±Ð°Ñ‡Ð¸Ñ‚Ð¸ ÑÐ²Ð¾ÑŽ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ",
+  "overview": "ÐžÐ³Ð»ÑÐ´",
+  "totalPlays": "Ð—Ð°Ð³Ð°Ð»ÑŒÐ½Ð° ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½ÑŒ",
+  "listenTime": "Ð§Ð°Ñ ÑÐ»ÑƒÑ…Ð°Ð½Ð½Ñ",
+  "mostPlayed": "ÐÐ°Ð¹Ñ‡Ð°ÑÑ‚Ñ–ÑˆÐµ Ð³Ñ€Ð°Ð»Ð¸",
+  "playsCount": "{count} Ð³Ñ€Ð°Ñ”",
+  "@playsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "durationHoursMinutes": "{hours}Ð³Ð¾Ð´ {minutes}Ñ…Ð²",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "durationMinutesOnly": "{minutes}Ð¼",
+  "@durationMinutesOnly": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "retry": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ñ–Ñ‚ÑŒ ÑÐ¿Ñ€Ð¾Ð±Ñƒ",
+  "share": "ÐŸÐ¾Ð´Ñ–Ð»Ñ–Ñ‚ÑŒÑÑ",
+  "playlist": "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "album": "ÐÐ»ÑŒÐ±Ð¾Ð¼",
+  "channel": "ÐšÐ°Ð½Ð°Ð»",
+  "playNext": "Ð“Ñ€Ð°Ñ‚Ð¸ Ð´Ð°Ð»Ñ–",
+  "addToQueue": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð² Ñ‡ÐµÑ€Ð³Ñƒ",
+  "addToPlaylist": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð´Ð¾ ÑÐ¿Ð¸ÑÐºÑƒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "goToAlbum": "ÐŸÐµÑ€ÐµÐ¹Ð´Ñ–Ñ‚ÑŒ Ð´Ð¾ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñƒ",
+  "goToArtist": "ÐŸÐµÑ€ÐµÐ¹Ð´Ñ–Ñ‚ÑŒ Ð´Ð¾ Ð’Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ",
+  "startRadio": "Ð—Ð°Ð¿ÑƒÑÑ‚Ñ–Ñ‚ÑŒ Ñ€Ð°Ð´Ñ–Ð¾",
+  "playAll": "Ð“Ñ€Ð°Ð¹Ñ‚Ðµ Ð²ÑÑ–",
+  "shuffle": "ÐŸÐµÑ€ÐµÑ‚Ð°ÑÑƒÐ²Ð°Ñ‚Ð¸",
+  "shuffleAll": "ÐŸÐµÑ€ÐµÐ¼Ñ–ÑˆÐ°Ð¹Ñ‚Ðµ Ð²ÑÐµ",
+  "radio": "Ñ€Ð°Ð´Ñ–Ð¾",
+  "follow": "Ð¡Ð»Ñ–Ð´ÑƒÐ¹Ñ‚Ðµ",
+  "following": "Ð¡Ð»Ñ–Ð´ÑƒÑŽ",
+  "connectYtMusicToFollowArtists": "ÐŸÑ–Ð´ÐºÐ»ÑŽÑ‡Ñ–Ñ‚ÑŒ YouTube Music, Ñ‰Ð¾Ð± ÑÑ‚ÐµÐ¶Ð¸Ñ‚Ð¸ Ð·Ð° Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†ÑÐ¼Ð¸.",
+  "couldNotFollowArtist": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð¿Ñ–Ð´Ð¿Ð¸ÑÐ°Ñ‚Ð¸ÑÑ Ð½Ð° {artist}.",
+  "@couldNotFollowArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "couldNotUnfollowArtist": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ ÑÐºÐ°ÑÑƒÐ²Ð°Ñ‚Ð¸ Ð¿Ñ–Ð´Ð¿Ð¸ÑÐºÑƒ Ð½Ð° {artist}.",
+  "@couldNotUnfollowArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "followingArtist": "Ð¡Ñ‚ÐµÐ¶Ð¸Ñ‚ÑŒ Ð·Ð° {artist}",
+  "@followingArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "unfollowedArtist": "Ð¡ÐºÐ°ÑÑƒÐ²Ð°Ð² Ð¿Ñ–Ð´Ð¿Ð¸ÑÐºÑƒ Ð½Ð° {artist}",
+  "@unfollowedArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingArtist": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ",
+  "subscribersCount": "{count} Ð¿Ñ–Ð´Ð¿Ð¸ÑÐ½Ð¸ÐºÑ–Ð²",
+  "@subscribersCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadedSection": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾",
+  "showAllDownloaded": "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚Ð¸ Ð²ÑÑ– Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– {count}",
+  "@showAllDownloaded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "seeAll": "ÐŸÐµÑ€ÐµÐ³Ð»ÑÐ½ÑƒÑ‚Ð¸ Ð²ÑÑ–",
+  "removeFromLikedSongs": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð· Ð¿Ñ–ÑÐµÐ½ÑŒ, ÑÐºÑ– ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ",
+  "addToLikedSongs": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð´Ð¾ Ð¿Ñ–ÑÐµÐ½ÑŒ, ÑÐºÑ– ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ",
+  "playingTrackNext": "Ð”Ð°Ð»Ñ– Ð³Ñ€Ð°Ñ” \"{title}\".",
+  "@playingTrackNext": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addedTrackToQueue": "Ð”Ð¾ Ñ‡ÐµÑ€Ð³Ð¸ Ð´Ð¾Ð´Ð°Ð½Ð¾ \"{title}\".",
+  "@addedTrackToQueue": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "playNextInJam": "Ð“Ñ€Ð°Ñ‚Ð¸ Ð´Ð°Ð»Ñ– Ð² Jam",
+  "playTrackNextInJam": "\"{title}\" Ð±ÑƒÐ´Ðµ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¼ Ñƒ Jam",
+  "@playTrackNextInJam": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addToJamQueue": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð´Ð¾ Ñ‡ÐµÑ€Ð³Ð¸ Jam",
+  "addedTrackToJamQueue": "Ð”Ð¾Ð´Ð°Ð½Ð¾ \"{title}\" Ð´Ð¾ Ñ‡ÐµÑ€Ð³Ð¸ Jam",
+  "@addedTrackToJamQueue": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloaded": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾",
+  "downloadingProgress": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ {progress}%",
+  "@downloadingProgress": {
+    "placeholders": {
+      "progress": {
+        "type": "int"
+      }
+    }
+  },
+  "downloadStartingTrack": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ \"{title}\"",
+  "@downloadStartingTrack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadNotificationsChannelDescription": "Ð¡Ð¿Ð¾Ð²Ñ–Ñ‰ÐµÐ½Ð½Ñ Ð¿Ñ€Ð¾ Ñ…Ñ–Ð´ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadStartingNotification": "ÐŸÐ¾Ñ‡Ð°Ñ‚Ð¾Ðº Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ...",
+  "downloadCompleteNotification": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾",
+  "downloadFileNotCreated": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸, Ð¾ÑÐºÑ–Ð»ÑŒÐºÐ¸ Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð±ÑƒÐ»Ð¾ ÑÑ‚Ð²Ð¾Ñ€ÐµÐ½Ð¾",
+  "shareTrackText": "{title} Ð²Ñ–Ð´ {artist}\n{url}",
+  "@shareTrackText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "createNewPlaylist": "Ð¡Ñ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ Ð½Ð¾Ð²Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "playlistName": "ÐÐ°Ð·Ð²Ð° ÑÐ¿Ð¸ÑÐºÑƒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "create": "Ð¡Ñ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸",
+  "couldNotLoadPlaylists": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "createLocalPlaylistInstead": "ÐÐ°Ñ‚Ð¾Ð¼Ñ–ÑÑ‚ÑŒ ÑÑ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "noPlaylistsYet": "Ð¡Ð¿Ð¸ÑÐºÑ–Ð² Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ñ‰Ðµ Ð½ÐµÐ¼Ð°Ñ”",
+  "createOneToGetStarted": "Ð¡Ñ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ Ð¹Ð¾Ð³Ð¾, Ñ‰Ð¾Ð± Ð¿Ð¾Ñ‡Ð°Ñ‚Ð¸",
+  "songsCount": "{count} Ð¿Ñ–ÑÐµÐ½ÑŒ",
+  "@songsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createdPlaylistOnYtMusicAndAddedTrack": "Ð¡Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð¾ \"{playlist}\" Ð½Ð° YT Music Ñ– Ð´Ð¾Ð´Ð°Ð½Ð¾ \"{track}\"",
+  "@createdPlaylistOnYtMusicAndAddedTrack": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToCreatePlaylist": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ ÑÑ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "createdPlaylistLocallyAndAddedTrack": "Ð¡Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð¾ \"{playlist}\" Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾ Ñ‚Ð° Ð´Ð¾Ð´Ð°Ð½Ð¾ \"{track}\"",
+  "@createdPlaylistLocallyAndAddedTrack": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToAddToPlaylist": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð´Ð¾Ð´Ð°Ñ‚Ð¸ Ð´Ð¾ ÑÐ¿Ð¸ÑÐºÑƒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "addedTrackToPlaylist": "Ð”Ð¾Ð´Ð°Ð½Ð¾ \"{track}\" Ð´Ð¾ \"{playlist}\"",
+  "@addedTrackToPlaylist": {
+    "placeholders": {
+      "track": {
+        "type": "String"
+      },
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "errorWithMessage": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ°: {message}",
+  "@errorWithMessage": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "searchingForLyrics": "ÐŸÐ¾ÑˆÑƒÐº Ñ‚ÐµÐºÑÑ‚Ñƒ...",
+  "failedToLoadLyrics": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ Ñ‚ÐµÐºÑÑ‚ Ð¿Ñ–ÑÐ½Ñ–",
+  "tryAnotherProvider": "Ð¡Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ–Ð½ÑˆÐ¾Ð³Ð¾ Ð¿Ñ€Ð¾Ð²Ð°Ð¹Ð´ÐµÑ€Ð°",
+  "noLyricsFound": "Ð¢ÐµÐºÑÑ‚Ð¸ Ð¿Ñ–ÑÐµÐ½ÑŒ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "linkLabel": "ÐŸÐ¾ÑÐ¸Ð»Ð°Ð½Ð½Ñ: {url}",
+  "@linkLabel": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "tracksCount": "{count} Ñ‚Ñ€ÐµÐºÑ–Ð²",
+  "@tracksCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importFromYoutubeMusic": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚ÑƒÐ²Ð°Ñ‚Ð¸ Ð· YouTube Music",
+  "importedPlaylistSuffix": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚Ð½Ñ–",
+  "importedFromYoutubeMusicDescription": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¾Ð²Ð°Ð½Ð¾ Ð· YouTube Music",
+  "importedPlaylist": "Ð†Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¾Ð²Ð°Ð½Ð¾ \"{playlist}\"",
+  "@importedPlaylist": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToImportPlaylist": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ñ–Ð¼Ð¿Ð¾Ñ€Ñ‚ÑƒÐ²Ð°Ñ‚Ð¸: {error}",
+  "@failedToImportPlaylist": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToLoadPlaylists": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "makeSureLoggedInYoutubeMusic": "ÐŸÐµÑ€ÐµÐºÐ¾Ð½Ð°Ð¹Ñ‚ÐµÑÑ, Ñ‰Ð¾ Ð²Ð¸ Ð²Ð²Ñ–Ð¹ÑˆÐ»Ð¸ Ð² YouTube Music",
+  "noPlaylistsFound": "Ð¡Ð¿Ð¸ÑÐºÑ–Ð² Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "createPlaylistsInYoutubeMusicFirst": "Ð¡Ð¿ÐµÑ€ÑˆÑƒ ÑÑ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ð² YouTube Music",
+  "loggedInYoutubeMusicSuccess": "Ð£ÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ð²Ñ–Ð¹ÑˆÐ»Ð¸ Ð² YouTube Music!",
+  "signInToYoutubeMusic": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ Ñƒ YouTube Music",
+  "loggingYouIn": "Ð’Ð¸ Ð²Ñ…Ð¾Ð´Ð¸Ñ‚Ðµ...",
+  "signInSyncYoutubeMusicDescription": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ Ñƒ ÑÐ²Ñ–Ð¹ Ð¾Ð±Ð»Ñ–ÐºÐ¾Ð²Ð¸Ð¹ Ð·Ð°Ð¿Ð¸Ñ Google, Ñ‰Ð¾Ð± ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·ÑƒÐ²Ð°Ñ‚Ð¸ ÑÐ²Ð¾ÑŽ Ð±Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÑƒ YouTube Music, Ð·Ð¾ÐºÑ€ÐµÐ¼Ð° Ð¿Ñ–ÑÐ½Ñ–, ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ð¹ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð¸, ÑÐºÑ– ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ.",
+  "playbackSpeed": "Ð¨Ð²Ð¸Ð´ÐºÑ–ÑÑ‚ÑŒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "normal": "Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¸Ð¹",
+  "defaultValue": "Ð—Ð° Ð·Ð°Ð¼Ð¾Ð²Ñ‡ÑƒÐ²Ð°Ð½Ð½ÑÐ¼",
+  "failedToLoadContent": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ Ð²Ð¼Ñ–ÑÑ‚",
+  "loadMore": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ñ‚Ðµ Ð±Ñ–Ð»ÑŒÑˆÐµ",
+  "audioSettingsTitle": "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¸ Ð·Ð²ÑƒÐºÑƒ",
+  "nowPlayingLabel": "Ð—Ð°Ñ€Ð°Ð· Ð³Ñ€Ð°Ñ”",
+  "higherQualityUsesMoreData": "Ð’Ð¸Ñ‰Ð° ÑÐºÑ–ÑÑ‚ÑŒ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ” Ð±Ñ–Ð»ÑŒÑˆÐµ Ð´Ð°Ð½Ð¸Ñ…",
+  "adjustsBasedOnNetworkSpeed": "ÐÐ°Ð»Ð°ÑˆÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð·Ð°Ð»ÐµÐ¶Ð½Ð¾ Ð²Ñ–Ð´ ÑˆÐ²Ð¸Ð´ÐºÐ¾ÑÑ‚Ñ– Ð¼ÐµÑ€ÐµÐ¶Ñ–",
+  "qualityLowUsesLessData": "~64 ÐºÐ±Ñ–Ñ‚/Ñ â€“ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð¼ÐµÐ½ÑˆÐµ Ð´Ð°Ð½Ð¸Ñ…",
+  "qualityMediumBalanced": "~128 ÐºÐ±Ñ–Ñ‚/Ñ - Ð·Ð±Ð°Ð»Ð°Ð½ÑÐ¾Ð²Ð°Ð½Ð¸Ð¹",
+  "qualityHighBestForMost": "~256 ÐºÐ±Ñ–Ñ‚/Ñ â€“ Ð½Ð°Ð¹ÐºÑ€Ð°Ñ‰Ðµ Ð´Ð»Ñ Ð±Ñ–Ð»ÑŒÑˆÐ¾ÑÑ‚Ñ–",
+  "qualityMaximumAvailable": "ÐÐ°Ð¹Ð²Ð¸Ñ‰Ð¸Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹ (~256 ÐšÐ±Ñ–Ñ‚/Ñ)",
+  "recommended": "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð¾Ð²Ð°Ð½Ð¾",
+  "blendTrackEndsIntoNext": "Ð—Ð¼Ñ–ÑˆÐ°Ð¹Ñ‚Ðµ ÐºÑ–Ð½ÐµÑ†ÑŒ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ð¾Ð³Ð¾ Ñ‚Ñ€ÐµÐºÑƒ Ð· Ð¿Ð¾Ñ‡Ð°Ñ‚ÐºÐ¾Ð¼ Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ð¾Ð³Ð¾",
+  "preCachesNextTracks": "ÐŸÐ¾Ð¿ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾ ÐºÐµÑˆÑƒÑ” Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ñ– ÐºÐ¾Ð¼Ð¿Ð¾Ð·Ð¸Ñ†Ñ–Ñ— Ñ‚Ð° Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÑŽÑ” Ð· Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾Ð³Ð¾ ÐºÐµÑˆÑƒ, ÑÐºÑ‰Ð¾ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾",
+  "smartStreamCache": "ÐšÐµÑˆ Smart Stream",
+  "usedCacheStorage": "Ð’Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð°Ð½Ð¾: {used} / {limit} ÐœÐ‘",
+  "@usedCacheStorage": {
+    "placeholders": {
+      "used": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "calculatingCacheUsage": "Ð Ð¾Ð·Ñ€Ð°Ñ…ÑƒÐ½Ð¾Ðº Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð°Ð½Ð½Ñ ÐºÐµÑˆÑƒ...",
+  "unableToReadCacheUsage": "ÐÐµÐ¼Ð¾Ð¶Ð»Ð¸Ð²Ð¾ Ð¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ñ‚Ð¸ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð°Ð½Ð½Ñ ÐºÐµÑˆÑƒ",
+  "preCacheNetwork": "ÐœÐµÑ€ÐµÐ¶Ð° Ð¿Ð¾Ð¿ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ð³Ð¾ ÐºÐµÑˆÑƒ",
+  "wifiOnly": "Ð¢Ñ–Ð»ÑŒÐºÐ¸ Wi-Fi",
+  "wifiAndMobileData": "Wi-Fi + Ð¼Ð¾Ð±Ñ–Ð»ÑŒÐ½Ñ– Ð´Ð°Ð½Ñ–",
+  "preCacheRunsWifiOnly": "ÐŸÐ¾Ð¿ÐµÑ€ÐµÐ´Ð½Ñ” ÐºÐµÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ð¿Ñ€Ð°Ñ†ÑŽÑ” Ð»Ð¸ÑˆÐµ Ð·Ð° Ð¿Ñ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ Ð´Ð¾ Wi-Fi",
+  "preCacheRunsWifiAndMobile": "ÐŸÐ¾Ð¿ÐµÑ€ÐµÐ´Ð½Ñ” ÐºÐµÑˆÑƒÐ²Ð°Ð½Ð½Ñ Ð¼Ð¾Ð¶Ðµ Ð¿Ñ€Ð°Ñ†ÑŽÐ²Ð°Ñ‚Ð¸ ÑÐº Ñ‡ÐµÑ€ÐµÐ· Wi-Fi, Ñ‚Ð°Ðº Ñ– Ñ‡ÐµÑ€ÐµÐ· Ð¼Ð¾Ð±Ñ–Ð»ÑŒÐ½Ñ– Ð´Ð°Ð½Ñ–",
+  "concurrentPreCacheDownloads": "ÐžÐ´Ð½Ð¾Ñ‡Ð°ÑÐ½Ðµ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¿Ð¾Ð¿ÐµÑ€ÐµÐ´Ð½ÑŒÐ¾Ð³Ð¾ ÐºÐµÑˆÑƒ",
+  "higherValuesCacheFaster": "Ð’Ð¸Ñ‰Ñ– Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ ÐºÐµÑˆÑƒÑŽÑ‚ÑŒÑÑ ÑˆÐ²Ð¸Ð´ÑˆÐµ, Ð°Ð»Ðµ ÑÐ¿Ð¾Ð¶Ð¸Ð²Ð°ÑŽÑ‚ÑŒ Ð±Ñ–Ð»ÑŒÑˆÐµ Ð¼ÐµÑ€ÐµÐ¶Ñ– Ñ‚Ð° Ð°ÐºÑƒÐ¼ÑƒÐ»ÑÑ‚Ð¾Ñ€Ð°",
+  "cacheSizeLimit": "ÐžÐ±Ð¼ÐµÐ¶ÐµÐ½Ð½Ñ Ñ€Ð¾Ð·Ð¼Ñ–Ñ€Ñƒ ÐºÐµÑˆÑƒ",
+  "off": "Ð’Ð¸Ð¼ÐºÐ½ÐµÐ½Ð¾",
+  "crossfadeDisabled": "ÐšÑ€Ð¾ÑÑÑ„ÐµÐ¹Ð´ Ð²Ð¸Ð¼ÐºÐ½ÐµÐ½Ð¾",
+  "currentValueLabel": "ÐŸÐ¾Ñ‚Ð¾Ñ‡Ð½Ð¸Ð¹: {value}",
+  "@currentValueLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "audioQuality": "Ð¯ÐºÑ–ÑÑ‚ÑŒ Ð·Ð²ÑƒÐºÑƒ",
+  "qualityLowKbps": "ÐÐ¸Ð·ÑŒÐºÐ¸Ð¹ (64 ÐºÐ±Ñ–Ñ‚/Ñ)",
+  "qualityMediumKbps": "Ð¡ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹ (128 ÐºÐ±Ñ–Ñ‚/Ñ)",
+  "qualityHighKbps": "Ð’Ð¸ÑÐ¾ÐºÐ¸Ð¹ (256 ÐšÐ±Ñ–Ñ‚/Ñ)",
+  "qualityMaximumKbps": "ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ (~256 ÐºÐ±Ñ–Ñ‚/Ñ)",
+  "all": "Ð²ÑÑ–",
+  "artists": "Ð¥ÑƒÐ´Ð¾Ð¶Ð½Ð¸ÐºÐ¸",
+  "albums": "ÐÐ»ÑŒÐ±Ð¾Ð¼Ð¸",
+  "playlists": "Ð¡Ð¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "singlesAndEps": "Ð¡Ð¸Ð½Ð³Ð»Ð¸ Ñ‚Ð° EP",
+  "appearsOn": "Ð—'ÑÐ²Ð»ÑÑ”Ñ‚ÑŒÑÑ Ð½Ð°",
+  "fansAlsoLike": "Ð¨Ð°Ð½ÑƒÐ²Ð°Ð»ÑŒÐ½Ð¸ÐºÐ°Ð¼ Ñ‚Ð°ÐºÐ¾Ð¶ Ð¿Ð¾Ð´Ð¾Ð±Ð°Ñ”Ñ‚ÑŒÑÑ",
+  "searchMusicHint": "ÐŸÐ¾ÑˆÑƒÐº Ð¿Ñ–ÑÐµÐ½ÑŒ, Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñ–Ð², Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–Ð²",
+  "searchForMusic": "ÐŸÐ¾ÑˆÑƒÐº Ð¼ÑƒÐ·Ð¸ÐºÐ¸",
+  "noResultsFound": "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ–Ð² Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "showAllLocalResults": "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚Ð¸ Ð²ÑÑ– {count} Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ñ– Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¸",
+  "@showAllLocalResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "topResult": "ÐÐ°Ð¹Ð²Ð¸Ñ‰Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚",
+  "artistLabel": "Ð¥ÑƒÐ´Ð¾Ð¶Ð½Ð¸Ðº",
+  "albumByArtist": "ÐÐ»ÑŒÐ±Ð¾Ð¼ - {artist}",
+  "@albumByArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "playlistByAuthor": "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ - {author}",
+  "@playlistByAuthor": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      }
+    }
+  },
+  "save": "Ð·Ð±ÐµÑ€ÐµÐ³Ñ‚Ð¸",
+  "upNext": "Ð”ÐÐ›Ð†",
+  "lyricsTab": "Ð›Ð†Ð Ð˜ÐšÐ",
+  "relatedTab": "ÐŸÐžÐ’'Ð¯Ð—ÐÐÐ†",
+  "youMightAlsoLike": "Ð’Ð°Ð¼ Ñ‚Ð°ÐºÐ¾Ð¶ Ð¼Ð¾Ð¶Ðµ ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ñ‚Ð¸ÑÑ",
+  "otherPerformances": "Ð†Ð½ÑˆÑ– Ð²Ð¸ÑÑ‚ÑƒÐ¿Ð¸",
+  "moreFrom": "Ð‘Ñ–Ð»ÑŒÑˆÐµ Ð²Ñ–Ð´",
+  "aboutArtist": "ÐŸÑ€Ð¾ Ñ…ÑƒÐ´Ð¾Ð¶Ð½Ð¸ÐºÐ°",
+  "jamQueue": "Ð§ÐµÑ€Ð³Ð° Ð²Ð°Ñ€ÐµÐ½Ð½Ñ",
+  "radioQueue": "Ð Ð°Ð´Ñ–Ð¾Ñ‡ÐµÑ€Ð³Ð°",
+  "queueLabel": "Ð§ÐµÑ€Ð³Ð°",
+  "playingFrom": "Ð“Ñ€Ð° Ð·",
+  "loadingMoreTracks": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ñ–Ð½ÑˆÐ¸Ñ… ÐºÐ¾Ð¼Ð¿Ð¾Ð·Ð¸Ñ†Ñ–Ð¹...",
+  "scrollForMore": "ÐŸÑ€Ð¾ÐºÑ€ÑƒÑ‚Ñ–Ñ‚ÑŒ, Ñ‰Ð¾Ð± Ð´Ñ–Ð·Ð½Ð°Ñ‚Ð¸ÑÑ Ð±Ñ–Ð»ÑŒÑˆÐµ",
+  "someone": "Ð¥Ñ‚Ð¾ÑÑŒ",
+  "noTracksInQueue": "ÐÐµÐ¼Ð°Ñ” Ñ‚Ñ€ÐµÐºÑ–Ð² Ñƒ Ñ‡ÐµÑ€Ð·Ñ–",
+  "addSongsToJamQueue": "Ð”Ð¾Ð´Ð°Ð¹Ñ‚Ðµ Ð¿Ñ–ÑÐ½Ñ– Ð´Ð¾ Ð´Ð¶ÐµÐ¼-Ñ‡ÐµÑ€Ð³Ð¸",
+  "addedByUser": "Ð”Ð¾Ð´Ð°Ð² {name}",
+  "@addedByUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noTrackPlaying": "Ð¢Ñ€ÐµÐº Ð½Ðµ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÑŽÑ”Ñ‚ÑŒÑÑ",
+  "noRelatedTracksFound": "ÐŸÐ¾Ð²'ÑÐ·Ð°Ð½Ð¸Ñ… Ñ‚Ñ€ÐµÐºÑ–Ð² Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "queueIsEmpty": "Ð§ÐµÑ€Ð³Ð° Ð¿Ð¾Ñ€Ð¾Ð¶Ð½Ñ",
+  "defaultQueueName": "ÐœÐ¾Ñ Ñ‡ÐµÑ€Ð³Ð°",
+  "saveQueueAsPlaylist": "Ð—Ð±ÐµÑ€ÐµÐ³Ñ‚Ð¸ Ñ‡ÐµÑ€Ð³Ñƒ ÑÐº ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "savedTracksToPlaylist": "Ð—Ð±ÐµÑ€ÐµÐ¶ÐµÐ½Ð¾ {count} Ñ‚Ñ€ÐµÐºÑ–Ð² Ñƒ \"{name}\"",
+  "@savedTracksToPlaylist": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "jams": "Ð”Ð¶ÐµÐ¼Ð¸",
+  "nowPlayingHeader": "Ð—ÐÐ ÐÐ— Ð“Ð ÐÐ„Ð¢Ð¬Ð¡Ð¯",
+  "browseMoodsGenresTitle": "ÐÐ°ÑÑ‚Ñ€Ð¾Ñ— Ñ‚Ð° Ð¶Ð°Ð½Ñ€Ð¸",
+  "moodCategoryMoods": "ÐÐ°ÑÑ‚Ñ€Ð¾Ñ—",
+  "moodCategoryGenres": "Ð–Ð°Ð½Ñ€Ð¸",
+  "moodCategoryActivities": "Ð”Ñ–ÑÐ»ÑŒÐ½Ñ–ÑÑ‚ÑŒ",
+  "moodChill": "ÐžÑ…Ð¾Ð»Ð¾Ð´Ð¸Ñ‚Ð¸",
+  "moodParty": "Ð²ÐµÑ‡Ñ–Ñ€ÐºÐ°",
+  "moodWorkout": "Ð¢Ñ€ÐµÐ½ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "moodFocus": "Ð¤Ð¾ÐºÑƒÑ",
+  "moodSleep": "ÑÐ¾Ð½",
+  "moodHappy": "Ð©Ð°ÑÐ»Ð¸Ð²Ð°",
+  "moodSad": "Ð¡ÑƒÐ¼Ð½Ð¾",
+  "moodRomance": "Ð Ð¾Ð¼Ð°Ð½Ñ‚Ð¸ÐºÐ°",
+  "moodFeelGood": "ÐŸÐ¾Ñ‡ÑƒÐ²Ð°Ð¹Ñ‚ÐµÑÑ Ð´Ð¾Ð±Ñ€Ðµ",
+  "moodEnergize": "Ð·Ð°Ñ€ÑÐ´Ð¸Ñ‚Ð¸ ÐµÐ½ÐµÑ€Ð³Ñ–Ñ”ÑŽ",
+  "genrePop": "ÐŸÐ¾Ð¿",
+  "genreRock": "Ð Ð¾Ðº",
+  "genreHipHop": "Ð¥Ñ–Ð¿-Ñ…Ð¾Ð¿",
+  "genreRnb": "R&B",
+  "genreElectronic": "ÐµÐ»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ñ–",
+  "genreDance": "Ð¢Ð°Ð½ÐµÑ†ÑŒ",
+  "genreJazz": "Ð”Ð¶Ð°Ð·",
+  "genreClassical": "ÐšÐ»Ð°ÑÐ¸Ñ‡Ð½Ð¸Ð¹",
+  "genreCountry": "ÐšÑ€Ð°Ñ—Ð½Ð°",
+  "genreMetal": "Ð¼ÐµÑ‚Ð°Ð»",
+  "genreIndie": "Ð†Ð½Ð´Ñ–",
+  "genreKPop": "K-Pop",
+  "genreLatin": "Ð»Ð°Ñ‚Ð¸Ð½ÑŒ",
+  "genreBollywood": "Ð‘Ð¾Ð»Ð»Ñ–Ð²ÑƒÐ´",
+  "activityDriving": "Ð’Ð¾Ð´Ñ–Ð½Ð½Ñ",
+  "activityCooking": "ÐŸÑ€Ð¸Ð³Ð¾Ñ‚ÑƒÐ²Ð°Ð½Ð½Ñ Ñ—Ð¶Ñ–",
+  "activityGaming": "Ð†Ð³Ñ€Ð¸",
+  "activityStudying": "Ð½Ð°Ð²Ñ‡Ð°Ð½Ð½Ñ",
+  "activityMeditation": "ÐœÐµÐ´Ð¸Ñ‚Ð°Ñ†Ñ–Ñ",
+  "play": "Ð³Ñ€Ð°Ñ‚Ð¸",
+  "findInPlaylist": "Ð—Ð½Ð°Ð¹Ñ‚Ð¸ Ð² ÑÐ¿Ð¸ÑÐºÑƒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ...",
+  "playlistNotFoundMessage": "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾\n\nÐ†Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ñ–ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐ¿Ð¸ÑÐºÑƒ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ: {id}\n\nÐ¦ÐµÐ¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ Ð¼Ð¾Ð¶Ðµ Ð±ÑƒÑ‚Ð¸ Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð½Ð¸Ð¼ Ð°Ð±Ð¾ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¼.",
+  "@playlistNotFoundMessage": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "offlineSnapshotDownloaded": "ÐžÑ„Ð»Ð°Ð¹Ð½-Ð·Ð½Ñ–Ð¼Ð¾Ðº â€“ {downloaded}/{total} Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾",
+  "@offlineSnapshotDownloaded": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatchingTracks": "ÐÐµÐ¼Ð°Ñ” Ð²Ñ–Ð´Ð¿Ð¾Ð²Ñ–Ð´Ð½Ð¸Ñ… Ñ‚Ñ€ÐµÐºÑ–Ð²",
+  "noTracksFound": "Ð¢Ñ€ÐµÐºÑ–Ð² Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "downloadingTracksFromPlaylist": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ {count} Ñ‚Ñ€ÐµÐºÑ–Ð² Ñ–Ð· {playlist}",
+  "@downloadingTracksFromPlaylist": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "addedTracksToQueueCount": "Ð”Ð¾ Ñ‡ÐµÑ€Ð³Ð¸ Ð´Ð¾Ð´Ð°Ð½Ð¾ {count} Ñ‚Ñ€ÐµÐºÑ–Ð²",
+  "@addedTracksToQueueCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "downloadPlaylist": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚",
+  "signInWithGoogle": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ Ð·Ð° Ð´Ð¾Ð¿Ð¾Ð¼Ð¾Ð³Ð¾ÑŽ Google",
+  "signInToUseJams": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ, Ñ‰Ð¾Ð± Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÐ²Ð°Ñ‚Ð¸ Jams",
+  "listenTogetherRealtime": "Ð¡Ð»ÑƒÑ…Ð°Ð¹Ñ‚Ðµ Ñ€Ð°Ð·Ð¾Ð¼ Ð· Ð´Ñ€ÑƒÐ·ÑÐ¼Ð¸ Ð² Ñ€ÐµÐ°Ð»ÑŒÐ½Ð¾Ð¼Ñƒ Ñ‡Ð°ÑÑ–",
+  "signInGoogleToStartOrJoinJam": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ Ð·Ð° Ð´Ð¾Ð¿Ð¾Ð¼Ð¾Ð³Ð¾ÑŽ Google, Ñ‰Ð¾Ð± Ñ€Ð¾Ð·Ð¿Ð¾Ñ‡Ð°Ñ‚Ð¸ Ð°Ð±Ð¾ Ð¿Ñ€Ð¸Ñ”Ð´Ð½Ð°Ñ‚Ð¸ÑÑ Ð´Ð¾ Jam-ÑÐµÑÑ–Ñ— Ð· Ð´Ñ€ÑƒÐ·ÑÐ¼Ð¸",
+  "listenTogether": "Ð¡Ð»ÑƒÑ…Ð°Ð¹Ñ‚Ðµ Ñ€Ð°Ð·Ð¾Ð¼",
+  "listenWithFriendsInSync": "Ð¡Ð»ÑƒÑ…Ð°Ð¹Ñ‚Ðµ Ñ€Ð°Ð·Ð¾Ð¼ Ñ–Ð· Ð´Ñ€ÑƒÐ·ÑÐ¼Ð¸",
+  "sameSongSameMoment": "Ð¢Ð° ÑÐ°Ð¼Ð° Ð¿Ñ–ÑÐ½Ñ, Ñ‚Ð° ÑÐ°Ð¼Ð° Ð¼Ð¸Ñ‚ÑŒ",
+  "startJam": "Ð—Ð°Ð¿ÑƒÑÑ‚Ñ–Ñ‚ÑŒ Jam",
+  "createSessionAndInviteFriends": "Ð¡Ñ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ ÑÐµÐ°Ð½Ñ Ñ– Ð·Ð°Ð¿Ñ€Ð¾ÑÑ–Ñ‚ÑŒ Ð´Ñ€ÑƒÐ·Ñ–Ð²",
+  "joinJam": "ÐŸÑ€Ð¸Ñ”Ð´Ð½Ð°Ð¹Ñ‚ÐµÑÑ Ð´Ð¾ Jam",
+  "enterSixDigitCode": "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ 6-Ð·Ð½Ð°Ñ‡Ð½Ð¸Ð¹ ÐºÐ¾Ð´",
+  "join": "ÐŸÑ€Ð¸Ñ”Ð´Ð½ÑƒÐ¹Ñ‚ÐµÑÑŒ",
+  "shareThisCode": "ÐŸÐ¾Ð´Ñ–Ð»Ñ–Ñ‚ÑŒÑÑ Ñ†Ð¸Ð¼ ÐºÐ¾Ð´Ð¾Ð¼",
+  "codeCopied": "ÐšÐ¾Ð´ ÑÐºÐ¾Ð¿Ñ–Ð¹Ð¾Ð²Ð°Ð½Ð¾!",
+  "youAreHost": "Ð’Ð¸ Ð³Ð¾ÑÐ¿Ð¾Ð´Ð°Ñ€",
+  "hostedBy": "ÐžÑ€Ð³Ð°Ð½Ñ–Ð·Ð°Ñ‚Ð¾Ñ€ {name}",
+  "@hostedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "listeningTogetherCount": "Ð¡Ð»ÑƒÑ…Ð°ÑŽÑ‡Ð¸ Ñ€Ð°Ð·Ð¾Ð¼ ({count})",
+  "@listeningTogetherCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "endSession": "Ð—Ð°Ð²ÐµÑ€ÑˆÐ¸Ñ‚Ð¸ ÑÐµÐ°Ð½Ñ",
+  "leaveSession": "Ð—Ð°Ð»Ð¸ÑˆÐ¸Ñ‚Ð¸ ÑÐµÐ°Ð½Ñ",
+  "connected": "ÐŸÑ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾",
+  "reconnecting": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð½Ðµ Ð¿Ñ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ",
+  "retryInSeconds": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ñ–Ñ‚ÑŒ Ñ‡ÐµÑ€ÐµÐ· {seconds} Ñ",
+  "@retryInSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reconnectingStatus": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð½Ðµ Ð¿Ñ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ Â· {suffix}",
+  "@reconnectingStatus": {
+    "placeholders": {
+      "suffix": {
+        "type": "String"
+      }
+    }
+  },
+  "reconnectingAttemptStatus": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð½Ðµ Ð¿Ñ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ ({attempt}) Â· {suffix}",
+  "@reconnectingAttemptStatus": {
+    "placeholders": {
+      "attempt": {
+        "type": "int"
+      },
+      "suffix": {
+        "type": "String"
+      }
+    }
+  },
+  "disconnected": "Ð’Ñ–Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾",
+  "playing": "Ð“Ñ€Ð°ÑŽÑ‡Ð¸",
+  "addSongsToPlayTogether": "Ð”Ð¾Ð´Ð°Ð¹Ñ‚Ðµ Ð¿Ñ–ÑÐ½Ñ–, Ñ‰Ð¾Ð± Ð³Ñ€Ð°Ñ‚Ð¸ Ñ—Ñ… Ñ€Ð°Ð·Ð¾Ð¼",
+  "sessionCreatedCode": "Ð¡ÐµÐ°Ð½Ñ ÑÑ‚Ð²Ð¾Ñ€ÐµÐ½Ð¾! ÐšÐ¾Ð´: {code}",
+  "@sessionCreatedCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "noJamFoundForCode": "Ð”Ð»Ñ Ñ†ÑŒÐ¾Ð³Ð¾ ÐºÐ¾Ð´Ñƒ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð·Ð°Ñ‚Ð¾Ñ€Ñƒ.",
+  "hostRole": "Ð¥Ð¾ÑÑ‚",
+  "canControl": "ÐœÐ¾Ð¶Ðµ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŽÐ²Ð°Ñ‚Ð¸",
+  "listeningStatus": "Ð¡Ð»ÑƒÑ…Ð°Ð½Ð½Ñ",
+  "transferHostQuestion": "ÐŸÐµÑ€ÐµÐ½ÐµÑÑ‚Ð¸ Ñ…Ð¾ÑÑ‚?",
+  "transferHostMessage": "Ð—Ñ€Ð¾Ð±Ð¸Ñ‚Ð¸ {name} Ð½Ð¾Ð²Ð¸Ð¼ Ñ…Ð¾ÑÑ‚Ð¾Ð¼? Ð’Ð¸ Ð²Ñ‚Ñ€Ð°Ñ‚Ð¸Ñ‚Ðµ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒ Ñ…Ð¾ÑÑ‚Ð°.",
+  "@transferHostMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "transfer": "Ð¢Ñ€Ð°Ð½ÑÑ„ÐµÑ€",
+  "removeControl": "Ð—Ð½ÑÑ‚Ð¸ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒ",
+  "allowControl": "Ð”Ð¾Ð·Ð²Ð¾Ð»Ð¸Ñ‚Ð¸ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒ",
+  "makeHost": "Ð—Ñ€Ð¾Ð±Ð¸Ñ‚Ð¸ Ð³Ð¾ÑÐ¿Ð¾Ð´Ð°Ñ€ÐµÐ¼",
+  "live": "Ð–Ð¸Ñ‚Ð¸",
+  "playbackControlsJam": "Ð²Ð°ÑˆÐµ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ ÐºÐµÑ€ÑƒÑ” Jam",
+  "starting": "ÐŸÐ¾Ñ‡Ð¸Ð½Ð°ÑŽÑ‡Ð¸...",
+  "or": "Ð°Ð±Ð¾",
+  "joinFriendsJam": "ÐŸÑ€Ð¸Ñ”Ð´Ð½Ð°Ð¹Ñ‚ÐµÑÑ Ð´Ð¾ Jam Ð´Ñ€ÑƒÐ³Ð°",
+  "startJamDescription": "Ð¡Ñ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ Jam, Ñ‰Ð¾Ð± Ð¿Ð¾Ð´Ñ–Ð»Ð¸Ñ‚Ð¸ÑÑ Ð¼ÑƒÐ·Ð¸ÐºÐ¾ÑŽ Ð· Ð´Ñ€ÑƒÐ·ÑÐ¼Ð¸.\nÐ’ÑÑ– ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð½Ð¾ Ñ‡ÑƒÑŽÑ‚ÑŒ Ð¾Ð´Ð½Ñƒ Ñ– Ñ‚Ñƒ Ð¶ Ð¿Ñ–ÑÐ½ÑŽ.",
+  "folderSettings": "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¸ Ð¿Ð°Ð¿ÐºÐ¸",
+  "noFoldersAddedYet": "ÐŸÐ°Ð¿ÐºÐ¸ Ñ‰Ðµ Ð½Ðµ Ð´Ð¾Ð´Ð°Ð½Ð¾",
+  "addFolder": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð¿Ð°Ð¿ÐºÑƒ",
+  "localMusic": "ÐœÑ–ÑÑ†ÐµÐ²Ð° Ð¼ÑƒÐ·Ð¸ÐºÐ°",
+  "scanLocalMusicDescription": "Ð¡ÐºÐ°Ð½ÑƒÐ¹Ñ‚Ðµ ÑÐ²Ñ–Ð¹ Ð¿Ñ€Ð¸ÑÑ‚Ñ€Ñ–Ð¹, Ñ‰Ð¾Ð± Ð·Ð½Ð°Ð¹Ñ‚Ð¸ Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ñ– Ð¼ÑƒÐ·Ð¸Ñ‡Ð½Ñ– Ñ„Ð°Ð¹Ð»Ð¸ Ñ‚Ð° Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÑŽÐ²Ð°Ñ‚Ð¸ Ñ—Ñ… Ñƒ Ñ€ÐµÐ¶Ð¸Ð¼Ñ– Ð¾Ñ„Ð»Ð°Ð¹Ð½",
+  "scanForMusic": "ÐŸÐ¾ÑˆÑƒÐº Ð¼ÑƒÐ·Ð¸ÐºÐ¸",
+  "addFolderLowercase": "Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð¿Ð°Ð¿ÐºÑƒ",
+  "supportedFormats": "ÐŸÑ–Ð´Ñ‚Ñ€Ð¸Ð¼ÑƒÐ²Ð°Ð½Ñ– Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸: MP3, FLAC, WAV, M4A, OGG",
+  "songsFromFoldersCount": "{songs} Ð¿Ñ–ÑÐµÐ½ÑŒ Ñ–Ð· {folders} Ð¿Ð°Ð¿Ð¾Ðº",
+  "@songsFromFoldersCount": {
+    "placeholders": {
+      "songs": {
+        "type": "int"
+      },
+      "folders": {
+        "type": "int"
+      }
+    }
+  },
+  "add": "Ð´Ð¾Ð´Ð°Ñ‚Ð¸",
+  "permissionRequired": "ÐŸÐ¾Ñ‚Ñ€Ñ–Ð±ÐµÐ½ Ð´Ð¾Ð·Ð²Ñ–Ð»",
+  "storagePermissionRequiredMessage": "Ð”Ð»Ñ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ñƒ Ð´Ð¾ Ð¼ÑƒÐ·Ð¸Ñ‡Ð½Ð¸Ñ… Ñ„Ð°Ð¹Ð»Ñ–Ð² Ð¿Ð¾Ñ‚Ñ€Ñ–Ð±ÐµÐ½ Ð´Ð¾Ð·Ð²Ñ–Ð» Ð½Ð° Ð·Ð±ÐµÑ€Ñ–Ð³Ð°Ð½Ð½Ñ. Ð£Ð²Ñ–Ð¼ÐºÐ½Ñ–Ñ‚ÑŒ Ð¹Ð¾Ð³Ð¾ Ð² Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½ÑÑ….",
+  "couldNotOpenSettingsPermission": "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ. Ð£Ð²Ñ–Ð¼ÐºÐ½Ñ–Ñ‚ÑŒ Ð´Ð¾Ð·Ð²Ñ–Ð» Ð½Ð° Ð·Ð±ÐµÑ€Ñ–Ð³Ð°Ð½Ð½Ñ Ð²Ñ€ÑƒÑ‡Ð½Ñƒ.",
+  "openSettings": "Ð’Ñ–Ð´ÐºÑ€Ð¸Ð¹Ñ‚Ðµ Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "folderAdded": "ÐŸÐ°Ð¿ÐºÑƒ Ð´Ð¾Ð´Ð°Ð½Ð¾",
+  "addedFolderScanNow": "Ð”Ð¾Ð´Ð°Ð½Ð¾ \"{folder}\". Ð’Ñ–Ð´ÑÐºÐ°Ð½ÑƒÐ²Ð°Ñ‚Ð¸ Ð¹Ð¾Ð³Ð¾ Ð½Ð° Ð½Ð°ÑÐ²Ð½Ñ–ÑÑ‚ÑŒ Ð¼ÑƒÐ·Ð¸ÐºÐ¸ Ð·Ð°Ñ€Ð°Ð·?",
+  "@addedFolderScanNow": {
+    "placeholders": {
+      "folder": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNow": "Ð¡ÐºÐ°Ð½ÑƒÐ²Ð°Ñ‚Ð¸ Ð·Ð°Ñ€Ð°Ð·",
+  "foundSongsCount": "Ð—Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ {count} Ð¿Ñ–ÑÐµÐ½ÑŒ",
+  "@foundSongsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "addFolderFirstThenScan": "Ð¡Ð¿Ð¾Ñ‡Ð°Ñ‚ÐºÑƒ Ð´Ð¾Ð´Ð°Ð¹Ñ‚Ðµ Ð¿Ð°Ð¿ÐºÑƒ, Ð° Ð¿Ð¾Ñ‚Ñ–Ð¼ ÑÐºÐ°Ð½ÑƒÐ¹Ñ‚Ðµ Ð°ÑƒÐ´Ñ–Ð¾Ñ„Ð°Ð¹Ð»Ð¸.",
+  "scanFoldersCountDescription": "Ð‘ÑƒÐ´Ðµ Ð¿Ñ€Ð¾ÑÐºÐ°Ð½Ð¾Ð²Ð°Ð½Ð¾ Ð¿Ð°Ð¿ÐºÑƒ(Ð¸) {count} Ð½Ð° Ð½Ð°ÑÐ²Ð½Ñ–ÑÑ‚ÑŒ Ð°ÑƒÐ´Ñ–Ð¾Ñ„Ð°Ð¹Ð»Ñ–Ð².",
+  "@scanFoldersCountDescription": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "foldersToScan": "ÐŸÐ°Ð¿ÐºÐ¸ Ð´Ð»Ñ ÑÐºÐ°Ð½ÑƒÐ²Ð°Ð½Ð½Ñ:",
+  "andMoreFolders": "... Ñ– Ñ‰Ðµ {count}",
+  "@andMoreFolders": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "startScan": "Ð Ð¾Ð·Ð¿Ð¾Ñ‡Ð°Ñ‚Ð¸ ÑÐºÐ°Ð½ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "foundSongsInFoldersCount": "Ð—Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ {songs} Ð¿Ñ–ÑÐµÐ½ÑŒ Ñƒ {folders} Ð¿Ð°Ð¿ÐºÐ°Ñ…",
+  "@foundSongsInFoldersCount": {
+    "placeholders": {
+      "songs": {
+        "type": "int"
+      },
+      "folders": {
+        "type": "int"
+      }
+    }
+  },
+  "scanningForMusic": "ÐŸÐ¾ÑˆÑƒÐº Ð¼ÑƒÐ·Ð¸ÐºÐ¸...",
+  "filesProgress": "{scanned} / {total} Ñ„Ð°Ð¹Ð»Ñ–Ð²",
+  "@filesProgress": {
+    "placeholders": {
+      "scanned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signOut": "Ð’Ð¸Ð¹Ñ‚Ð¸",
+  "signInGoogleProfilePictureJams": "Ð£Ð²Ñ–Ð¹Ð´Ñ–Ñ‚ÑŒ Ð·Ð° Ð´Ð¾Ð¿Ð¾Ð¼Ð¾Ð³Ð¾ÑŽ Google, Ñ‰Ð¾Ð± Ð¾Ñ‚Ñ€Ð¸Ð¼Ð°Ñ‚Ð¸ Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð½Ñ Ð¿Ñ€Ð¾Ñ„Ñ–Ð»ÑŽ Ñ‚Ð° Ð²Ð²Ñ–Ð¼ÐºÐ½ÑƒÑ‚Ð¸ Jams",
+  "sync": "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·ÑƒÐ²Ð°Ñ‚Ð¸",
+  "lastSynced": "ÐžÑÑ‚Ð°Ð½Ð½Ñ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·Ð°Ñ†Ñ–Ñ: {time}",
+  "@lastSynced": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncedItems": "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·Ð¾Ð²Ð°Ð½Ð¾ {count} ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ–Ð²",
+  "@syncedItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncing": "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·Ð°Ñ†Ñ–Ñ...",
+  "syncNow": "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·ÑƒÐ²Ð°Ñ‚Ð¸ Ð·Ð°Ñ€Ð°Ð·",
+  "cachedItems": "{count} ÐºÐµÑˆÐ¾Ð²Ð°Ð½Ð¸Ñ… ÐµÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ–Ð²",
+  "@cachedItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streams": "ÐŸÐ¾Ñ‚Ð¾ÐºÐ¸",
+  "colors": "ÐšÐ¾Ð»ÑŒÐ¾Ñ€Ð¸",
+  "searches": "ÐŸÐ¾ÑˆÑƒÐºÐ¸",
+  "expiredCount": "{count} Ð¼Ð¸Ð½ÑƒÐ²",
+  "@expiredCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cacheCleanupComplete": "ÐžÑ‡Ð¸Ñ‰ÐµÐ½Ð½Ñ ÐºÐµÑˆÑƒ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾",
+  "cleanUp": "ÐžÑ‡Ð¸Ñ‰ÐµÐ½Ð½Ñ",
+  "clearCache": "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚Ð¸ ÐºÐµÑˆ",
+  "clearCachedMusicDataConfirm": "Ð¦Ðµ Ð¾Ñ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ ÑƒÑÑ– ÐºÐµÑˆÐ¾Ð²Ð°Ð½Ñ– Ð¼ÑƒÐ·Ð¸Ñ‡Ð½Ñ– Ð´Ð°Ð½Ñ–. ÐŸÑ€Ð¾Ð´Ð¾Ð²Ð¶Ð¸Ñ‚Ð¸?",
+  "clear": "ÑÑÐ½Ð¾",
+  "cacheCleared": "ÐšÐµÑˆ Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½Ð¾",
+  "analytics": "ÐÐ½Ð°Ð»Ñ–Ñ‚Ð¸ÐºÐ°",
+  "hits": "Ð¥Ñ–Ñ‚Ð¸",
+  "misses": "ÐŸÑ€Ð¾Ð¼Ð°Ñ…Ð¸",
+  "network": "ÐœÐµÑ€ÐµÐ¶Ð°",
+  "analyticsReset": "Ð¡ÐºÐ¸Ð´Ð°Ð½Ð½Ñ Ð°Ð½Ð°Ð»Ñ–Ñ‚Ð¸ÐºÐ¸",
+  "resetStats": "Ð¡ÐºÐ¸Ð½ÑƒÑ‚Ð¸ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ",
+  "cacheHitRate": "Ð¨Ð²Ð¸Ð´ÐºÑ–ÑÑ‚ÑŒ Ð·Ð²ÐµÑ€Ð½ÐµÐ½ÑŒ Ð´Ð¾ ÐºÐµÑˆÑƒ",
+  "liked": "Ð¡Ð¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¾ÑÑŒ",
+  "appInfo": "Ð†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð´Ð¾Ð´Ð°Ñ‚Ð¾Ðº",
+  "releaseBuild": "Ð ÐµÐ»Ñ–Ð· Ð·Ð±Ñ–Ñ€ÐºÐ¸",
+  "updater": "ÐžÐ½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ",
+  "available": "Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹",
+  "unavailable": "Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹",
+  "loadingCompact": "Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ...",
+  "errorCompact": "Ð¿Ð¾Ð¼Ð¸Ð»ÐºÐ°",
+  "none": "Ð½ÐµÐ¼Ð°Ñ”",
+  "currentPatch": "ÐŸÐ¾Ñ‚Ð¾Ñ‡Ð½Ð¸Ð¹ Ð¿Ð°Ñ‚Ñ‡",
+  "nextPatch": "ÐÐ°ÑÑ‚ÑƒÐ¿Ð½Ð¸Ð¹ Ð¿Ð°Ñ‚Ñ‡",
+  "disconnectYoutubeMusic": "Ð’Ñ–Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ð¸ YouTube Music",
+  "disconnectYoutubeMusicQuestion": "Ð’Ñ–Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ð¸ YouTube Music?",
+  "disconnectYoutubeMusicWarning": "Ð’Ð°Ñˆ Ð¾Ð±Ð»Ñ–ÐºÐ¾Ð²Ð¸Ð¹ Ð·Ð°Ð¿Ð¸Ñ YouTube Music Ð±ÑƒÐ´Ðµ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾ Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸. Ð”Ð°Ð½Ñ– Ð²Ð°ÑˆÐ¾Ñ— Ð±Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÐ¸ Ð±ÑƒÐ´Ðµ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾.",
+  "disconnect": "Ð’Ñ–Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ð¸",
+  "syncFailed": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ñ–Ð·Ð°Ñ†Ñ–Ñ—: {error}",
+  "@syncFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "justNow": "ÐŸÑ€Ð¾ÑÑ‚Ð¾ Ð·Ð°Ñ€Ð°Ð·",
+  "minutesAgo": "{count}Ñ…Ð² Ñ‚Ð¾Ð¼Ñƒ",
+  "@minutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursAgo": "{count} Ð³Ð¾Ð´ Ñ‚Ð¾Ð¼Ñƒ",
+  "@hoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "{count} Ð´Ð½. Ñ‚Ð¾Ð¼Ñƒ",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noSongsInTitle": "ÐÐµÐ¼Ð°Ñ” Ð¿Ñ–ÑÐµÐ½ÑŒ Ñƒ {title}",
+  "@noSongsInTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "createPlaylistDescription": "Ð¡Ñ‚Ð²Ð¾Ñ€Ñ–Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ, Ñ‰Ð¾Ð± ÑƒÐ¿Ð¾Ñ€ÑÐ´ÐºÑƒÐ²Ð°Ñ‚Ð¸ ÑÐ²Ð¾ÑŽ Ð¼ÑƒÐ·Ð¸ÐºÑƒ",
+  "savedAlbumsFromYoutubeMusic": "Ð—Ð±ÐµÑ€ÐµÐ¶ÐµÐ½Ñ– Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð¸ Ð· YouTube Music",
+  "noSavedAlbumsFromYoutubeMusic": "ÐÐµÐ¼Ð°Ñ” Ð·Ð±ÐµÑ€ÐµÐ¶ÐµÐ½Ð¸Ñ… Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñ–Ð² Ñ–Ð· YouTube Music",
+  "errorLoadingAlbums": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñ–Ð²",
+  "recentlyPlayed": "ÐÐµÑ‰Ð¾Ð´Ð°Ð²Ð½Ð¾ Ð³Ñ€Ð°Ð²",
+  "noAlbumsYet": "Ð©Ðµ Ð½ÐµÐ¼Ð°Ñ” Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñ–Ð²",
+  "playSomeMusicToSeeAlbumsHere": "Ð¡Ð»ÑƒÑ…Ð°Ð¹Ñ‚Ðµ Ð¼ÑƒÐ·Ð¸ÐºÑƒ, Ñ‰Ð¾Ð± Ð¿ÐµÑ€ÐµÐ³Ð»ÑÐ½ÑƒÑ‚Ð¸ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð¸ Ñ‚ÑƒÑ‚",
+  "subscriptions": "Subscriptions",
+  "subscribedArtists": "ÐŸÑ–Ð´Ð¿Ð¸ÑÐ°Ð½Ñ– Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–",
+  "noSubscribedArtists": "ÐÐµÐ¼Ð°Ñ” Ð¿Ñ–Ð´Ð¿Ð¸ÑÐ°Ð½Ð¸Ñ… Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–Ð²",
+  "errorLoadingArtists": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–Ð²",
+  "recentlyPlayedArtists": "ÐÐµÑ‰Ð¾Ð´Ð°Ð²Ð½Ð¾ Ð·Ñ–Ð³Ñ€Ð°Ð½Ñ– Ð°Ñ€Ñ‚Ð¸ÑÑ‚Ð¸",
+  "noArtistsYet": "Ð’Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–Ð² Ñ‰Ðµ Ð½ÐµÐ¼Ð°Ñ”",
+  "playSomeMusicToSeeArtistsHere": "Ð£Ð²Ñ–Ð¼ÐºÐ½Ñ–Ñ‚ÑŒ Ð¼ÑƒÐ·Ð¸ÐºÑƒ, Ñ‰Ð¾Ð± Ð¿Ð¾Ð±Ð°Ñ‡Ð¸Ñ‚Ð¸ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð²Ñ†Ñ–Ð² Ñ‚ÑƒÑ‚",
+  "downloading": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "downloadedPlaylists": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚Ð¸",
+  "errorLoadingDownloads": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½ÑŒ",
+  "deleteDownload": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ",
+  "deleteDownloadQuestion": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ?",
+  "deleteDownloadWarning": "Ð¦Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚ÑŒ \"{title}\" Ð· Ð²Ð°ÑˆÐ¾Ð³Ð¾ Ð¿Ñ€Ð¸ÑÑ‚Ñ€Ð¾ÑŽ. Ð’Ð¸ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ Ð¹Ð¾Ð³Ð¾ Ð·Ð½Ð¾Ð²Ñƒ Ð¿Ñ–Ð·Ð½Ñ–ÑˆÐµ.",
+  "@deleteDownloadWarning": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "deletedTrack": "Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾ \"{title}\"",
+  "@deletedTrack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadedSongsWillAppearHere": "Ð¢ÑƒÑ‚ Ð·â€™ÑÐ²Ð»ÑÑ‚ÑŒÑÑ Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ñ– Ð¿Ñ–ÑÐ½Ñ–",
+  "createPlaylist": "Ð¡Ñ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "autoPlaylists": "ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡Ð½Ñ– ÑÐ¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "likedSongsLabel": "Ð¡Ð¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ Ð¿Ñ–ÑÐ½Ñ–",
+  "downloadedFraction": "{downloaded}/{total} Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¾",
+  "@downloadedFraction": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "more": "Ð±Ñ–Ð»ÑŒÑˆÐµ",
+  "video": "Ð’Ð†Ð”Ð•Ðž",
+  "forgottenFavorites": "Ð—Ð°Ð±ÑƒÑ‚Ñ– ÑƒÐ»ÑŽÐ±Ð»ÐµÐ½Ñ–",
+  "mixedForYou": "Ð—Ð¼Ñ–ÑˆÐ°Ð½Ðµ Ð´Ð»Ñ Ð²Ð°Ñ",
+  "myMixOne": "ÐœÑ–Ð¹ Ð¼Ñ–ÐºÑ 1",
+  "discoverMix": "Ð’Ñ–Ð´ÐºÑ€Ð¸Ð¹Ñ‚Ðµ Ð´Ð»Ñ ÑÐµÐ±Ðµ ÑÑƒÐ¼Ñ–Ñˆ",
+  "replayMix": "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ð¸ Ð¼Ñ–ÐºÑ",
+  "newRelease": "ÐÐ¾Ð²Ð¸Ð¹ Ð²Ð¸Ð¿ÑƒÑÐº",
+  "chillMix": "Chill Mix",
+  "basedOnYourListening": "ÐÐ° Ð¾ÑÐ½Ð¾Ð²Ñ– Ð²Ð°ÑˆÐ¾Ð³Ð¾ Ð¿Ñ€Ð¾ÑÐ»ÑƒÑ…Ð¾Ð²ÑƒÐ²Ð°Ð½Ð½Ñ",
+  "newMusicForYou": "ÐÐ¾Ð²Ð° Ð¼ÑƒÐ·Ð¸ÐºÐ° Ð´Ð»Ñ Ð²Ð°Ñ",
+  "yourFavorites": "Ð’Ð°ÑˆÑ– ÑƒÐ»ÑŽÐ±Ð»ÐµÐ½Ñ–",
+  "freshTracks": "Ð¡Ð²Ñ–Ð¶Ñ– Ñ‚Ñ€ÐµÐºÐ¸",
+  "relaxingVibes": "Ð Ð¾Ð·ÑÐ»Ð°Ð±Ð»ÑŽÑŽÑ‡Ñ– Ð½Ð°ÑÑ‚Ñ€Ð¾Ñ—",
+  "musicToGetYouStarted": "ÐœÐ£Ð—Ð˜ÐšÐ Ð”Ð›Ð¯ ÐŸÐžÐ§ÐÐ¢ÐšÐ£",
+  "welcomeUser": "Ð›Ð°ÑÐºÐ°Ð²Ð¾ Ð¿Ñ€Ð¾ÑÐ¸Ð¼Ð¾ {name}",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeFallbackName": "Ñ‚Ð°Ð¼",
+  "youtubeMusicLabel": "YouTube Music",
+  "local": "ÐœÑ–ÑÑ†ÐµÐ²Ð¸Ð¹",
+  "recentlyAdded": "ÐÐµÑ‰Ð¾Ð´Ð°Ð²Ð½Ð¾ Ð´Ð¾Ð´Ð°Ð½Ð¸Ð¹",
+  "name": "Ð†Ð¼'Ñ",
+  "duration": "Ð¢Ñ€Ð¸Ð²Ð°Ð»Ñ–ÑÑ‚ÑŒ",
+  "searchSongsHint": "ÐŸÐ¾ÑˆÑƒÐº Ð¿Ñ–ÑÐµÐ½ÑŒ...",
+  "noLikedSongs": "ÐÐµÐ¼Ð°Ñ” Ð¿Ñ–ÑÐµÐ½ÑŒ, ÑÐºÑ– ÑÐ¿Ð¾Ð´Ð¾Ð±Ð°Ð»Ð¸ÑÑ",
+  "likeSomeSongsToSeeThemHere": "ÐŸÐ¾Ð´Ð¾Ð±Ð°Ñ”Ñ‚ÑŒÑÑ ÐºÑ–Ð»ÑŒÐºÐ° Ð¿Ñ–ÑÐµÐ½ÑŒ, Ñ‰Ð¾Ð± Ð¿Ð¾Ð±Ð°Ñ‡Ð¸Ñ‚Ð¸ Ñ—Ñ… Ñ‚ÑƒÑ‚",
+  "noLocalSongs": "ÐÐµÐ¼Ð°Ñ” Ð¼Ñ–ÑÑ†ÐµÐ²Ð¸Ñ… Ð¿Ñ–ÑÐµÐ½ÑŒ",
+  "scanFoldersToFindLocalMusic": "Ð¡ÐºÐ°Ð½ÑƒÐ¹Ñ‚Ðµ Ð¿Ð°Ð¿ÐºÐ¸, Ñ‰Ð¾Ð± Ð·Ð½Ð°Ð¹Ñ‚Ð¸ Ð¼Ñ–ÑÑ†ÐµÐ²Ñƒ Ð¼ÑƒÐ·Ð¸ÐºÑƒ",
+  "noResults": "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ–Ð² Ð½ÐµÐ¼Ð°Ñ”",
+  "tryDifferentKeywords": "Ð¡Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ€Ñ–Ð·Ð½Ñ– ÐºÐ»ÑŽÑ‡Ð¾Ð²Ñ– ÑÐ»Ð¾Ð²Ð°",
+  "noSongsYet": "ÐŸÑ–ÑÐµÐ½ÑŒ Ñ‰Ðµ Ð½ÐµÐ¼Ð°Ñ”",
+  "playSomeMusicToBuildYourLibrary": "Ð¡Ð»ÑƒÑ…Ð°Ð¹Ñ‚Ðµ Ð¼ÑƒÐ·Ð¸ÐºÑƒ, Ñ‰Ð¾Ð± ÑÑ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ ÑÐ²Ð¾ÑŽ Ð±Ñ–Ð±Ð»Ñ–Ð¾Ñ‚ÐµÐºÑƒ",
+  "albumNotFound": "ÐÐ»ÑŒÐ±Ð¾Ð¼ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "downloadAlbum": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶Ð¸Ñ‚Ð¸ Ð°Ð»ÑŒÐ±Ð¾Ð¼",
+  "downloadingTracksFromAlbum": "Ð—Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ {count} Ñ‚Ñ€ÐµÐºÑ–Ð² Ñ–Ð· {album}",
+  "@downloadingTracksFromAlbum": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "album": {
+        "type": "String"
+      }
+    }
+  },
+  "shareAlbumText": "{title} Ð²Ñ–Ð´ {artist}\n{url}",
+  "@shareAlbumText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "suggestions": "ÐŸÑ€Ð¾Ð¿Ð¾Ð·Ð¸Ñ†Ñ–Ñ—",
+  "recentSearches": "ÐžÑÑ‚Ð°Ð½Ð½Ñ– Ð¿Ð¾ÑˆÑƒÐºÐ¸",
+  "startTypingToSearch": "ÐŸÐ¾Ñ‡Ð½Ñ–Ñ‚ÑŒ Ð²Ð²Ð¾Ð´Ð¸Ñ‚Ð¸ Ð´Ð»Ñ Ð¿Ð¾ÑˆÑƒÐºÑƒ...",
+  "youtubeMusicPlaylists": "Ð¡Ð¿Ð¸ÑÐºÐ¸ Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ YouTube Music",
+  "errorLoadingPlaylists": "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð·Ð°Ð²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ ÑÐ¿Ð¸ÑÐºÑ–Ð² Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ",
+  "yourPlaylists": "Ð’Ð°ÑˆÑ– Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚Ð¸",
+  "noYoutubeMusicPlaylistsFound": "Ð¡Ð¿Ð¸ÑÐºÑ–Ð² Ð²Ñ–Ð´Ñ‚Ð²Ð¾Ñ€ÐµÐ½Ð½Ñ YouTube Music Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾",
+  "songCountLabel": "{count, plural, one {# Ð¿Ñ–ÑÐ½Ñ} other {# Ð¿Ñ–ÑÐ½Ñ–}}",
+  "@songCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unknownAlbum": "ÐÐµÐ²Ñ–Ð´Ð¾Ð¼Ð¸Ð¹ Ð°Ð»ÑŒÐ±Ð¾Ð¼",
+  "jamCodeExample": "ABC123",
+  "jamCodeHint": "ÐšÐžÐ”",
+  "yourProfile": "Ð’Ð°Ñˆ Ð¿Ñ€Ð¾Ñ„Ñ–Ð»ÑŒ",
+  "googleUser": "ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ‡ Google",
+  "jamsAndProfile": "Ð”Ð¶ÐµÐ¼Ð¸ Ñ‚Ð° Ð¿Ñ€Ð¾Ñ„Ñ–Ð»ÑŒ",
+  "yes": "Ñ‚Ð°Ðº",
+  "no": "Ð½ÐµÐ¼Ð°Ñ”",
+  "foundInSettings": "Ð—Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð² Ð½Ð°Ð»Ð°ÑˆÑ‚ÑƒÐ²Ð°Ð½Ð½ÑÑ…",
+  "sharePlaylistText": "{title}\n{url}",
+  "@sharePlaylistText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "shareArtistText": "{artist}\n{url}",
+  "@shareArtistText": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "megabytesValue": "{value} ÐœÐ‘",
+  "@megabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gigabytesValue": "{value} Ð“Ð±",
+  "@gigabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "approxMegabytesValue": "~{value} ÐœÐ±",
+  "@approxMegabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "approxKbpsValue": "~{value} ÐºÐ±Ñ–Ñ‚/Ñ",
+  "@approxKbpsValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "secondsShort": "{value}s",
+  "@secondsShort": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "speedMultiplier": "{value}x",
+  "@speedMultiplier": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "history": "Ð†ÑÑ‚Ð¾Ñ€Ñ–Ñ",
+  "historyDescription": "Ð’Ð°ÑˆÐ° Ð½ÐµÐ´Ð°Ð²Ð½Ñ Ñ–ÑÑ‚Ð¾Ñ€Ñ–Ñ Ð¿Ñ€Ð¾ÑÐ»ÑƒÑ…Ð¾Ð²ÑƒÐ²Ð°Ð½ÑŒ",
+  "removeFromPlaylist": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð· Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚Ð°",
+  "removedFromPlaylist": "Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾ Ð· Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚Ð°",
+  "deletePlaylist": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚",
+  "deletePlaylistConfirm": "Ð’Ð¸ Ð²Ð¿ÐµÐ²Ð½ÐµÐ½Ñ–, Ñ‰Ð¾ Ñ…Ð¾Ñ‡ÐµÑ‚Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸ Ñ†ÐµÐ¹ Ð¿Ð»ÐµÐ¹Ð»Ð¸ÑÑ‚?",
+  "delete": "Ð’Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸"
+}

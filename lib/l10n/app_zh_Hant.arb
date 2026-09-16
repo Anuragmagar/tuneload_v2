@@ -1,0 +1,1188 @@
+﻿{
+  "@@locale": "zh_Hant",
+  "appTitle": "TuneLoad",
+  "updateDownloadedBanner": "æ›´æ–°å·²ä¸‹è¼‰ã€‚é‡æ–°å•Ÿå‹•æ‡‰ç”¨ç¨‹å¼å³å¯æ‡‰ç”¨ã€‚",
+  "restart": "é‡æ–°å•Ÿå‹•",
+  "dismiss": "è§£åƒ±",
+  "newVersionAvailableBanner": "æ–°ç‰ˆæœ¬ {version} å·²åœ¨ GitHub ä¸Šæä¾›ã€‚",
+  "@newVersionAvailableBanner": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "download": "ä¸‹è¼‰",
+  "later": "å¾Œä¾†",
+  "home": "é¦–é ",
+  "songs": "æ­Œæ›²",
+  "library": "åœ–æ›¸é¤¨",
+  "folders": "è³‡æ–™å¤¾",
+  "settings": "è¨­å®š",
+  "searchSettingsHint": "æœå°‹è¨­å®š...",
+  "noMatchingSettings": "æ²’æœ‰åŒ¹é…çš„è¨­ç½®",
+  "appearance": "å¤–è§€",
+  "theme": "ä¸»é¡Œ",
+  "themeAuto": "æ±½è»Š",
+  "themeLight": "å…‰",
+  "themeDark": "é»‘æš—",
+  "dynamicColorsNote": "é¡è‰²æ ¹æ“šç•¶å‰æ›²ç›®çš„å°ˆè¼¯å°é¢å‹•æ…‹èª¿æ•´ã€‚",
+  "language": "èªžè¨€",
+  "languageSubtitle": "é¸æ“‡æ‡‰ç”¨èªžè¨€",
+  "chooseLanguage": "é¸æ“‡èªžè¨€",
+  "searchLanguagesHint": "æœå°‹èªžè¨€...",
+  "noMatchingLanguages": "æ²’æœ‰åŒ¹é…çš„èªžè¨€",
+  "useSystemLanguage": "ä½¿ç”¨ç³»çµ±èªžè¨€",
+  "languageSystem": "ç³»çµ±é è¨­",
+  "languageEnglish": "è‹±èªž",
+  "languageTurkish": "åœŸè€³å…¶èªž",
+  "languageRussian": "ä¿„æ–‡",
+  "languageHindi": "å°åœ°èªž",
+  "languageMalayalam": "é¦¬æ‹‰é›…æ‹‰å§†èªž",
+  "languageTamil": "æ³°ç±³çˆ¾èªž",
+  "languageKannada": "å¡ç´é”èªž",
+  "languageTelugu": "æ³°ç›§å›ºèªž",
+  "languageSpanish": "è¥¿ç­ç‰™èªž",
+  "languageFrench": "æ³•èªž",
+  "languageGerman": "å¾·æ–‡",
+  "languageIndonesian": "å°å°¼èªž",
+  "languageJapanese": "æ—¥èªž",
+  "languageKorean": "éŸ“èªž",
+  "languageArabic": "é˜¿æ‹‰ä¼¯èªž",
+  "languageUkrainian": "çƒå…‹è˜­èªž",
+  "languageThai": "æ³°èªž",
+  "languagePortugueseBrazil": "è‘¡è„ç‰™èªžï¼ˆå·´è¥¿ï¼‰",
+  "languageChineseSimplified": "ä¸­æ–‡ï¼ˆç°¡é«”ï¼‰",
+  "languageChineseTraditional": "ä¸­æ–‡ï¼ˆç¹é«”ï¼‰",
+  "contentLocation": "å…§å®¹ä½ç½®",
+  "contentLocationSubtitle": "é¸æ“‡ç”¨æ–¼æŽ¨è–¦å’Œç›®éŒ„å¯ç”¨æ€§çš„å€åŸŸ",
+  "chooseContentLocation": "é¸æ“‡å…§å®¹ä½ç½®",
+  "searchLocationsHint": "æœå°‹åœ°é»ž...",
+  "noMatchingLocations": "æ²’æœ‰åŒ¹é…çš„ä½ç½®",
+  "locationSystem": "ç³»çµ±é è¨­",
+  "locationUnitedStates": "ç¾Žåœ‹",
+  "locationIndia": "å°åº¦",
+  "locationTurkey": "åœŸè€³å…¶",
+  "locationRussia": "ä¿„ç¾…æ–¯",
+  "quickActions": "å¿«é€Ÿè¡Œå‹•",
+  "audio": "éŸ³è¨Š",
+  "audioQuickActionsSubtitle": "ä¸²æµå“è³ªã€äº¤å‰æ·¡å…¥æ·¡å‡ºå’Œæ’­æ”¾",
+  "downloads": "ä¸‹è¼‰",
+  "downloadsQuickActionsSubtitle": "ä¸‹è¼‰å“è³ªã€ä½ç½®å’Œå­˜å„²",
+  "backupRestore": "å‚™ä»½èˆ‡å¾©åŽŸ",
+  "backupRestoreQuickActionsSubtitle": "åŒ¯å‡ºæˆ–åŒ¯å…¥æ‚¨çš„åº«",
+  "streamingQuality": "ä¸²æµå“è³ª",
+  "streamingQualitySubtitle": "èª¿æ•´ä¸²æµåª’é«”çš„éŸ³è¨Šä½å…ƒçŽ‡",
+  "crossfadeTransition": "æ·¡å…¥æ·¡å‡ºéŽæ¸¡",
+  "crossfadeTransitionSubtitle": "å°‡æ›²ç›®å¹³æ»‘åœ°ç›¸äº’èžåˆ",
+  "streamingCache": "ä¸²æµç·©å­˜",
+  "streamingCacheSubtitle": "é å…ˆå¿«å–ä¸‹ä¸€å€‹æ›²ç›®ï¼Œåƒ… Wi-Fi é¸é …",
+  "downloadQuality": "ä¸‹è¼‰å“è³ª",
+  "downloadQualitySubtitle": "é›¢ç·šä¸‹è¼‰çš„è³ªé‡",
+  "downloadLocation": "ä¸‹è¼‰ä½ç½®",
+  "downloadLocationSubtitle": "ä¸‹è¼‰çš„éŸ³æ¨‚çš„å„²å­˜ä½ç½®",
+  "dataUsageInfo": "æ•¸æ“šä½¿ç”¨è³‡è¨Š",
+  "dataUsageInfoSubtitle": "æ¯é¦–æ­Œæ›²çš„é è¨ˆå„²å­˜ç©ºé–“",
+  "createBackup": "å»ºç«‹å‚™ä»½",
+  "createBackupSubtitle": "åŒ¯å‡ºæ‚¨çš„åº«å’Œè¨­ç½®",
+  "restoreBackup": "æ¢å¾©å‚™ä»½",
+  "restoreBackupSubtitle": "å°Žå…¥å…ˆå‰çš„å‚™ä»½æ–‡ä»¶",
+  "connectYoutubeMusic": "é€£çµ YouTube éŸ³æ¨‚",
+  "connectYoutubeMusicSubtitle": "åŒæ­¥æ‚¨å–œæ­¡çš„æ­Œæ›²ã€æ’­æ”¾æ¸…å–®ç­‰",
+  "connectYtMusicButton": "é€£çµ YouTube éŸ³æ¨‚",
+  "downloadsTitle": "ä¸‹è¼‰",
+  "clearCompleted": "æ¸…é™¤å®Œæˆ",
+  "clearFailed": "æ¸…é™¤å¤±æ•—",
+  "noDownloadsYet": "é‚„æ²’ä¸‹è¼‰",
+  "downloadSongsToListenOffline": "ä¸‹è¼‰æ­Œæ›²ä»¥é›¢ç·šæ”¶è½",
+  "downloadingTitle": "æ­£åœ¨ä¸‹è¼‰",
+  "downloadedTitle": "å·²ä¸‹è¼‰ ({count})",
+  "@downloadedTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "failedTitle": "å¤±æ•—",
+  "songsDownloaded": "ä¸‹è¼‰{count}æ­Œæ›²",
+  "@songsDownloaded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "usingStorage": "ä½¿ç”¨ {storage}",
+  "@usingStorage": {
+    "placeholders": {
+      "storage": {
+        "type": "String"
+      }
+    }
+  },
+  "failedWithError": "å¤±æ•—ï¼š{error}",
+  "@failedWithError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "unknownError": "æœªçŸ¥éŒ¯èª¤",
+  "removeDownload": "åˆªé™¤ä¸‹è¼‰",
+  "downloadSettingsTitle": "ä¸‹è¼‰è¨­å®š",
+  "downloadLocationSubtitleLong": "ä¸‹è¼‰çš„éŸ³æ¨‚æª”æ¡ˆçš„å„²å­˜ä½ç½®",
+  "offlineDownloadTip": "ä¸‹è¼‰çš„æ›²ç›®ç„¡éœ€ç¶²è·¯å³å¯æ’­æ”¾ï¼Œä¸”ä¸ä½¿ç”¨ä¸²æµè³‡æ–™ã€‚",
+  "estimatedStoragePerSong": "æ¯é¦–æ­Œæ›²çš„ä¼°è¨ˆå­˜å„²ç©ºé–“",
+  "storageLocation": "å­˜æ”¾åœ°é»ž",
+  "loading": "åŠ è¼‰ä¸­...",
+  "errorLoadingPath": "è¼‰å…¥è·¯å¾‘éŒ¯èª¤",
+  "privateStorageDownloadsNote": "ä¸‹è¼‰å…§å®¹å„²å­˜åœ¨æ‡‰ç”¨ç¨‹å¼ç§æœ‰å„²å­˜ä¸­ï¼Œä»¥ç²å¾—æ›´å¥½çš„å¯é æ€§ä¸¦ä¸”æ²’æœ‰æ¬Šé™è¦æ±‚ã€‚",
+  "qualityAutoChip": "æ±½è»Š",
+  "qualityLowChip": "ä½Ž",
+  "qualityMediumChip": "ä¸­ç­‰",
+  "qualityHighChip": "é«˜",
+  "qualityMaxChip": "æœ€å¤§",
+  "qualityHighest": "æœ€é«˜",
+  "qualityDescriptionAuto": "è‡ªå‹• - é©æ‡‰ç¶²çµ¡",
+  "qualityDescriptionLow": "ä½Ž - ~64 kbpsï¼ˆç¯€çœå„²å­˜ç©ºé–“ï¼‰",
+  "qualityDescriptionMedium": "ä¸­ - ~128 kbpsï¼ˆå¹³è¡¡ï¼‰",
+  "qualityDescriptionHigh": "é«˜ - ~256 kbpsï¼ˆå»ºè­°ï¼‰",
+  "qualityDescriptionMax": "æœ€å¤§å€¼ - æœ€é«˜å¯ç”¨ (~256 kbps)",
+  "backupRestoreTitle": "å‚™ä»½èˆ‡å¾©åŽŸ",
+  "backupIncludesDescription": "å‚™ä»½åŒ…æ‹¬å–œæ­¡çš„æ­Œæ›²ã€æ’­æ”¾æ¸…å–®ã€æœå°‹è¨˜éŒ„ã€æœ€è¿‘æ’­æ”¾çš„æ­Œæ›²å’Œé—œéµæ‡‰ç”¨ç¨‹å¼è¨­å®šã€‚",
+  "exportBackup": "åŒ¯å‡ºå‚™ä»½",
+  "exportBackupSubtitle": "ä¿å­˜å‚™ä»½æª”æ¡ˆä»¥å…±äº«æˆ–å­˜å„²",
+  "importBackup": "å°Žå…¥å‚™ä»½",
+  "importBackupSubtitle": "å¾žå‚™ä»½æª”æ¡ˆä¸­æ¢å¾©",
+  "dangerZone": "å±éšªå€",
+  "clearAppData": "æ¸…é™¤æ‡‰ç”¨ç¨‹å¼æ•¸æ“š",
+  "clearAppDataSubtitle": "é‡ç½®æ‡‰ç”¨ç¨‹å¼è³‡æ–™/è¨­ç½®ï¼ŒåŒæ™‚ä¿ç•™ä¸‹è¼‰çš„éŸ³è¨Šæ–‡ä»¶",
+  "backupCreatedSuccessfully": "å‚™ä»½å»ºç«‹æˆåŠŸ",
+  "backupFailed": "å‚™ä»½å¤±æ•—ï¼š{error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "backupRestoredSuccessfully": "å‚™ä»½å¾©åŽŸæˆåŠŸ",
+  "restoreFailed": "å¾©åŽŸå¤±æ•—ï¼š{error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "clearAllDataQuestion": "æ¸…é™¤æ‰€æœ‰è³‡æ–™ï¼Ÿ",
+  "clearAllDataWarning": "é€™å°‡é‡ç½®æœ¬åœ°æ‡‰ç”¨ç¨‹å¼è³‡æ–™å’Œè¨­ç½®ï¼Œä½†ä¿ç•™ä¸‹è¼‰çš„æ­Œæ›²æª”æ¡ˆã€‚æ­¤æ“ä½œç„¡æ³•æ’¤éŠ·ã€‚",
+  "cancel": "å–æ¶ˆ",
+  "clearAll": "å…¨éƒ¨æ¸…é™¤",
+  "appDataClearedPreserved": "æ‡‰ç”¨ç¨‹å¼è³‡æ–™å·²æ¸…é™¤ï¼ˆä¸‹è¼‰çš„éŸ³è¨Šæª”æ¡ˆä¿ç•™ï¼‰",
+  "failedGeneric": "å¤±æ•—ï¼š{error}",
+  "@failedGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "backupSubject": "TuneLoad éŸ³æ¨‚å‚™ä»½",
+  "statisticsTitle": "çµ±è¨ˆæ•¸æ“š",
+  "statisticsCleared": "çµ±è¨ˆè³‡æ–™å·²æ¸…é™¤",
+  "clearStatistics": "æ¸…æ™°çš„çµ±è¨ˆæ•¸æ“š",
+  "noStatisticsYet": "é‚„æ²’æœ‰çµ±è¨ˆæ•¸æ“š",
+  "startListeningStats": "é–‹å§‹è†è½ä¸¦æŸ¥çœ‹æ‚¨çš„çµ±è¨ˆæ•¸æ“š",
+  "overview": "æ¦‚è¿°",
+  "totalPlays": "ç¸½æ’­æ”¾æ¬¡æ•¸",
+  "listenTime": "æ”¶è½æ™‚é–“",
+  "mostPlayed": "æœ€å¸¸çŽ©çš„",
+  "playsCount": "{count} æ’­æ”¾",
+  "@playsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "durationHoursMinutes": "{hours}h {minutes}m",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "durationMinutesOnly": "{minutes}ç±³",
+  "@durationMinutesOnly": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "retry": "é‡è©¦",
+  "share": "åˆ†äº«",
+  "playlist": "æ’­æ”¾æ¸…å–®",
+  "album": "å°ˆè¼¯",
+  "channel": "é »é“",
+  "playNext": "æ’­æ”¾ä¸‹ä¸€å€‹",
+  "addToQueue": "æ·»åŠ åˆ°éšŠåˆ—",
+  "addToPlaylist": "æ–°å¢žåˆ°æ’­æ”¾åˆ—è¡¨",
+  "goToAlbum": "å‰å¾€ç›¸ç°¿",
+  "goToArtist": "å‰å¾€è—è¡“å®¶",
+  "startRadio": "é–‹å§‹å»£æ’­",
+  "playAll": "æ’­æ”¾å…¨éƒ¨",
+  "shuffle": "éš¨æ©Ÿæ’­æ”¾",
+  "shuffleAll": "å…¨éƒ¨éš¨æ©Ÿæ’­æ”¾",
+  "radio": "æ”¶éŸ³æ©Ÿ",
+  "follow": "é—œæ³¨",
+  "following": "æ­£åœ¨é—œæ³¨",
+  "connectYtMusicToFollowArtists": "é€£æŽ¥ YouTube Music ä»¥é—œæ³¨è—è¡“å®¶ã€‚",
+  "couldNotFollowArtist": "ç„¡æ³•é—œæ³¨ {artist}ã€‚",
+  "@couldNotFollowArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "couldNotUnfollowArtist": "ç„¡æ³•å–æ¶ˆé—œæ³¨ {artist}ã€‚",
+  "@couldNotUnfollowArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "followingArtist": "é—œæ³¨ {artist}",
+  "@followingArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "unfollowedArtist": "å·²å–æ¶ˆè¿½è¹¤ {artist}",
+  "@unfollowedArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingArtist": "åŠ è¼‰è—è¡“å®¶æ™‚å‡ºéŒ¯",
+  "subscribersCount": "{count} è¨‚é–±è€…",
+  "@subscribersCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadedSection": "å·²ä¸‹è¼‰",
+  "showAllDownloaded": "é¡¯ç¤ºæ‰€æœ‰å·²ä¸‹è¼‰çš„ {count}",
+  "@showAllDownloaded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "seeAll": "çœ‹å…¨éƒ¨",
+  "removeFromLikedSongs": "å¾žå–œæ­¡çš„æ­Œæ›²ä¸­åˆªé™¤",
+  "addToLikedSongs": "åŠ å…¥å–œæ­¡çš„æ­Œæ›²",
+  "playingTrackNext": "æŽ¥ä¸‹ä¾†æ’­æ”¾â€œ{title}â€",
+  "@playingTrackNext": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addedTrackToQueue": "å°‡â€œ{title}â€åŠ å…¥åˆ°ä½‡åˆ—ä¸­",
+  "@addedTrackToQueue": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "playNextInJam": "åœ¨ Jam ä¸­æ’­æ”¾ä¸‹ä¸€å€‹",
+  "playTrackNextInJam": "æŽ¥ä¸‹ä¾†å°‡åœ¨ Jam æ’­æ”¾â€œ{title}â€",
+  "@playTrackNextInJam": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "addToJamQueue": "æ·»åŠ åˆ°æžœé†¬éšŠåˆ—",
+  "addedTrackToJamQueue": "å°‡â€œ{title}â€æ–°å¢žè‡³ Jam ä½‡åˆ—",
+  "@addedTrackToJamQueue": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloaded": "å·²ä¸‹è¼‰",
+  "downloadingProgress": "æ­£åœ¨ä¸‹è¼‰ {progress}%",
+  "@downloadingProgress": {
+    "placeholders": {
+      "progress": {
+        "type": "int"
+      }
+    }
+  },
+  "downloadStartingTrack": "æ­£åœ¨ä¸‹è¼‰â€œ{title}â€",
+  "@downloadStartingTrack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadNotificationsChannelDescription": "ä¸‹è¼‰é€²åº¦é€šçŸ¥",
+  "downloadStartingNotification": "é–‹å§‹ä¸‹è¼‰...",
+  "downloadCompleteNotification": "ä¸‹è¼‰å®Œæˆ",
+  "downloadFileNotCreated": "ä¸‹è¼‰å¤±æ•—ï¼Œå› ç‚ºæ–‡ä»¶æœªå‰µå»º",
+  "shareTrackText": "{title} ç”± {artist} æä¾›\n{url}",
+  "@shareTrackText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "createNewPlaylist": "å»ºç«‹æ–°çš„æ’­æ”¾åˆ—è¡¨",
+  "playlistName": "æ’­æ”¾æ¸…å–®åç¨±",
+  "create": "å‰µå»º",
+  "couldNotLoadPlaylists": "ç„¡æ³•è¼‰å…¥æ’­æ”¾åˆ—è¡¨",
+  "createLocalPlaylistInstead": "å»ºç«‹æœ¬åœ°æ’­æ”¾åˆ—è¡¨",
+  "noPlaylistsYet": "é‚„æ²’æœ‰æ’­æ”¾åˆ—è¡¨",
+  "createOneToGetStarted": "å‰µå»ºä¸€å€‹ä»¥é–‹å§‹ä½¿ç”¨",
+  "songsCount": "{count} æ­Œæ›²",
+  "@songsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createdPlaylistOnYtMusicAndAddedTrack": "åœ¨ YT Music ä¸Šå»ºç«‹äº†â€œ{playlist}â€ä¸¦æ–°å¢žäº†â€œ{track}â€",
+  "@createdPlaylistOnYtMusicAndAddedTrack": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToCreatePlaylist": "å»ºç«‹æ’­æ”¾æ¸…å–®å¤±æ•—",
+  "createdPlaylistLocallyAndAddedTrack": "åœ¨æœ¬æ©Ÿä¸Šå»ºç«‹â€œ{playlist}â€ä¸¦æ–°å¢žâ€œ{track}â€",
+  "@createdPlaylistLocallyAndAddedTrack": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToAddToPlaylist": "ç„¡æ³•æ–°å¢žåˆ°æ’­æ”¾åˆ—è¡¨",
+  "addedTrackToPlaylist": "å°‡â€œ{track}â€åŠ å…¥åˆ°â€œ{playlist}â€",
+  "@addedTrackToPlaylist": {
+    "placeholders": {
+      "track": {
+        "type": "String"
+      },
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "errorWithMessage": "éŒ¯èª¤ï¼š{message}",
+  "@errorWithMessage": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "searchingForLyrics": "æ­£åœ¨æœå°‹æ­Œè©ž...",
+  "failedToLoadLyrics": "æ­Œè©žè¼‰å…¥å¤±æ•—",
+  "tryAnotherProvider": "å˜—è©¦å…¶ä»–æä¾›è€…",
+  "noLyricsFound": "æ²’æ‰¾åˆ°æ­Œè©ž",
+  "linkLabel": "é€£çµï¼š{url}",
+  "@linkLabel": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "tracksCount": "{count} æ›²ç›®",
+  "@tracksCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importFromYoutubeMusic": "å¾ž YouTube éŸ³æ¨‚åŒ¯å…¥",
+  "importedPlaylistSuffix": "é€²å£",
+  "importedFromYoutubeMusicDescription": "å¾ž YouTube éŸ³æ¨‚åŒ¯å…¥",
+  "importedPlaylist": "å°Žå…¥â€œ{playlist}â€",
+  "@importedPlaylist": {
+    "placeholders": {
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToImportPlaylist": "å°Žå…¥å¤±æ•—ï¼š{error}",
+  "@failedToImportPlaylist": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToLoadPlaylists": "ç„¡æ³•è¼‰å…¥æ’­æ”¾åˆ—è¡¨",
+  "makeSureLoggedInYoutubeMusic": "ç¢ºä¿æ‚¨å·²ç™»å…¥ YouTube Music",
+  "noPlaylistsFound": "æœªæ‰¾åˆ°æ’­æ”¾åˆ—è¡¨",
+  "createPlaylistsInYoutubeMusicFirst": "é¦–å…ˆåœ¨ YouTube Music ä¸­å»ºç«‹ä¸€äº›æ’­æ”¾åˆ—è¡¨",
+  "loggedInYoutubeMusicSuccess": "å·²æˆåŠŸç™»å…¥ YouTube Musicï¼",
+  "signInToYoutubeMusic": "ç™»å…¥ YouTube éŸ³æ¨‚",
+  "loggingYouIn": "æ­£åœ¨ç‚ºæ‚¨ç™»å…¥...",
+  "signInSyncYoutubeMusicDescription": "ä½¿ç”¨æ‚¨çš„ Google å¸³æˆ¶ç™»å…¥ä»¥åŒæ­¥æ‚¨çš„ YouTube éŸ³æ¨‚åº«ï¼ŒåŒ…æ‹¬å–œæ­¡çš„æ­Œæ›²ã€æ’­æ”¾æ¸…å–®å’Œå°ˆè¼¯ã€‚",
+  "playbackSpeed": "æ’­æ”¾é€Ÿåº¦",
+  "normal": "æ­£å¸¸",
+  "defaultValue": "é è¨­",
+  "failedToLoadContent": "ç„¡æ³•è¼‰å…¥å…§å®¹",
+  "loadMore": "åŠ è¼‰æ›´å¤š",
+  "audioSettingsTitle": "éŸ³è¨Šè¨­å®š",
+  "nowPlayingLabel": "æ­£åœ¨æ’­æ”¾",
+  "higherQualityUsesMoreData": "æ›´é«˜çš„å“è³ªä½¿ç”¨æ›´å¤šçš„æ•¸æ“š",
+  "adjustsBasedOnNetworkSpeed": "æ ¹æ“šç¶²è·¯é€Ÿåº¦èª¿æ•´",
+  "qualityLowUsesLessData": "~64 kbps - ä½¿ç”¨æ›´å°‘çš„æ•¸æ“š",
+  "qualityMediumBalanced": "~128 kbps - å¹³è¡¡",
+  "qualityHighBestForMost": "~256 kbps - æœ€é©åˆå¤§å¤šæ•¸äºº",
+  "qualityMaximumAvailable": "æœ€é«˜å¯ç”¨ (~256 kbps)",
+  "recommended": "æŽ¨è–¦",
+  "blendTrackEndsIntoNext": "å°‡ç›®å‰æ›²ç›®çš„çµå°¾æ··åˆåˆ°ä¸‹ä¸€é¦–æ›²ç›®çš„é–‹é ­",
+  "preCachesNextTracks": "é å…ˆå¿«å–ä¸‹ä¸€å€‹æ›²ç›®ä¸¦åœ¨å¯ç”¨æ™‚å¾žæœ¬åœ°å¿«å–æ’­æ”¾",
+  "smartStreamCache": "æ™ºæ…§æµå¿«å–",
+  "usedCacheStorage": "ä½¿ç”¨ï¼š{used} / {limit} MB",
+  "@usedCacheStorage": {
+    "placeholders": {
+      "used": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "calculatingCacheUsage": "æ­£åœ¨è¨ˆç®—å¿«å–ä½¿ç”¨æƒ…æ³...",
+  "unableToReadCacheUsage": "ç„¡æ³•è®€å–å¿«å–ä½¿ç”¨æƒ…æ³",
+  "preCacheNetwork": "é ç·©å­˜ç¶²çµ¡",
+  "wifiOnly": "åƒ…ç„¡ç·šç¶²è·¯",
+  "wifiAndMobileData": "ç„¡ç·šç¶²è·¯+è¡Œå‹•æ•¸æ“š",
+  "preCacheRunsWifiOnly": "é ç·©å­˜åƒ…åœ¨é€£æŽ¥åˆ° Wi-Fi æ™‚é‹è¡Œ",
+  "preCacheRunsWifiAndMobile": "é å…ˆç·©å­˜å¯ä»¥åœ¨ Wi-Fi å’Œè¡Œå‹•æ•¸æ“šä¸Šé‹è¡Œ",
+  "concurrentPreCacheDownloads": "ä¸¦ç™¼é ç·©å­˜ä¸‹è¼‰",
+  "higherValuesCacheFaster": "è¼ƒé«˜çš„å€¼å¿«å–é€Ÿåº¦æ›´å¿«ï¼Œä½†ä½¿ç”¨æ›´å¤šçš„ç¶²è·¯å’Œé›»æ± ",
+  "cacheSizeLimit": "å¿«å–å¤§å°é™åˆ¶",
+  "off": "é—œé–‰",
+  "crossfadeDisabled": "ç¦ç”¨äº¤å‰æ·¡å…¥æ·¡å‡º",
+  "currentValueLabel": "ç›®å‰ï¼š{value}",
+  "@currentValueLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "audioQuality": "éŸ³è¨Šå“è³ª",
+  "qualityLowKbps": "ä½Ž (64 kbps)",
+  "qualityMediumKbps": "ä¸­ (128 kbps)",
+  "qualityHighKbps": "é«˜ (256 kbps)",
+  "qualityMaximumKbps": "æœ€å¤§ï¼ˆ~256 kbpsï¼‰",
+  "all": "å…¨éƒ¨",
+  "artists": "è—è¡“å®¶",
+  "albums": "å°ˆè¼¯",
+  "playlists": "æ’­æ”¾æ¸…å–®",
+  "singlesAndEps": "å–®æ›²å’ŒEP",
+  "appearsOn": "å‡ºç¾æ–¼",
+  "fansAlsoLike": "ç²‰çµ²é‚„å–œæ­¡",
+  "searchMusicHint": "æœå°‹æ­Œæ›²ã€å°ˆè¼¯ã€è—è¡“å®¶",
+  "searchForMusic": "æœå°‹éŸ³æ¨‚",
+  "noResultsFound": "æ²’æœ‰æ‰¾åˆ°çµæžœ",
+  "showAllLocalResults": "é¡¯ç¤ºæ‰€æœ‰ {count} æœ¬åœ°çµæžœ",
+  "@showAllLocalResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "topResult": "æœ€é«˜çµæžœ",
+  "artistLabel": "è—è¡“å®¶",
+  "albumByArtist": "å°ˆè¼¯ - {artist}",
+  "@albumByArtist": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      }
+    }
+  },
+  "playlistByAuthor": "æ’­æ”¾æ¸…å–® - {author}",
+  "@playlistByAuthor": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      }
+    }
+  },
+  "save": "å„²å­˜",
+  "upNext": "ä¸Šä¸€å€‹",
+  "lyricsTab": "æ­Œè©ž",
+  "relatedTab": "ç›¸é—œ",
+  "youMightAlsoLike": "æ‚¨å¯èƒ½ä¹Ÿå–œæ­¡",
+  "otherPerformances": "å…¶ä»–æ¼”å‡º",
+  "moreFrom": "æ›´å¤šä¾†è‡ª",
+  "aboutArtist": "é—œæ–¼è—è¡“å®¶",
+  "jamQueue": "å µå¡žéšŠåˆ—",
+  "radioQueue": "ç„¡ç·šé›»éšŠåˆ—",
+  "queueLabel": "ä½‡åˆ—",
+  "playingFrom": "æ’­æ”¾è‡ª",
+  "loadingMoreTracks": "æ­£åœ¨åŠ è¼‰æ›´å¤šæ›²ç›®...",
+  "scrollForMore": "æ²å‹•æŸ¥çœ‹æ›´å¤š",
+  "someone": "æœ‰äºº",
+  "noTracksInQueue": "éšŠåˆ—ä¸­æ²’æœ‰æ›²ç›®",
+  "addSongsToJamQueue": "å°‡æ­Œæ›²åŠ å…¥å³èˆˆéšŠåˆ—ä¸­",
+  "addedByUser": "ç”± {name} åŠ å…¥",
+  "@addedByUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noTrackPlaying": "æ²’æœ‰æ›²ç›®æ’­æ”¾",
+  "noRelatedTracksFound": "æœªæ‰¾åˆ°ç›¸é—œæ›²ç›®",
+  "queueIsEmpty": "éšŠåˆ—ç‚ºç©º",
+  "defaultQueueName": "æˆ‘çš„éšŠåˆ—",
+  "saveQueueAsPlaylist": "å°‡éšŠåˆ—å¦å­˜ç‚ºæ’­æ”¾åˆ—è¡¨",
+  "savedTracksToPlaylist": "å·²å°‡ {count} æ›²ç›®å„²å­˜è‡³â€œ{name}â€",
+  "@savedTracksToPlaylist": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "jams": "æžœé†¬",
+  "nowPlayingHeader": "æ­£åœ¨æ’­æ”¾",
+  "browseMoodsGenresTitle": "æƒ…ç·’èˆ‡æµæ´¾",
+  "moodCategoryMoods": "å¿ƒæƒ…",
+  "moodCategoryGenres": "æµæ´¾",
+  "moodCategoryActivities": "æ´»å‹•",
+  "moodChill": "å¯’å†·",
+  "moodParty": "æ´¾å°",
+  "moodWorkout": "é›éŠ",
+  "moodFocus": "ç„¦é»ž",
+  "moodSleep": "ç¡çœ ",
+  "moodHappy": "å¿«æ¨‚",
+  "moodSad": "æ‚²å‚·",
+  "moodRomance": "æµªæ¼«",
+  "moodFeelGood": "æ„Ÿè¦ºè‰¯å¥½",
+  "moodEnergize": "å……æ»¿æ´»åŠ›",
+  "genrePop": "æµè¡ŒéŸ³æ¨‚",
+  "genreRock": "æ–æ»¾",
+  "genreHipHop": "å˜»å“ˆéŸ³æ¨‚",
+  "genreRnb": "ç¯€å¥è—èª¿",
+  "genreElectronic": "é›»å­",
+  "genreDance": "èˆžè¹ˆ",
+  "genreJazz": "çˆµå£«æ¨‚",
+  "genreClassical": "å¤å…¸",
+  "genreCountry": "åœ‹å®¶",
+  "genreMetal": "é‡‘å±¬",
+  "genreIndie": "ç¨ç«‹",
+  "genreKPop": "éŸ“åœ‹æµè¡ŒéŸ³æ¨‚",
+  "genreLatin": "æ‹‰ä¸æ–‡",
+  "genreBollywood": "å¯¶èŠå¡¢",
+  "activityDriving": "é§•é§›",
+  "activityCooking": "çƒ¹é£ª",
+  "activityGaming": "éŠæˆ²",
+  "activityStudying": "å­¸ç¿’ä¸­",
+  "activityMeditation": "å†¥æƒ³",
+  "play": "çŽ©",
+  "findInPlaylist": "åœ¨æ’­æ”¾æ¸…å–®ä¸­å°‹æ‰¾...",
+  "playlistNotFoundMessage": "æœªæ‰¾åˆ°æ’­æ”¾åˆ—è¡¨\n\næ’­æ”¾æ¸…å–® IDï¼š{id}\n\nè©²æ’­æ”¾æ¸…å–®å¯èƒ½æ˜¯ç§æœ‰çš„æˆ–ä¸å¯ç”¨çš„ã€‚",
+  "@playlistNotFoundMessage": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "offlineSnapshotDownloaded": "é›¢ç·šå¿«ç…§ - ä¸‹è¼‰ {downloaded}/{total}",
+  "@offlineSnapshotDownloaded": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noMatchingTracks": "æ²’æœ‰åŒ¹é…çš„æ›²ç›®",
+  "noTracksFound": "æœªæ‰¾åˆ°æ›²ç›®",
+  "downloadingTracksFromPlaylist": "å¾ž {playlist} ä¸‹è¼‰ {count} æ›²ç›®",
+  "@downloadingTracksFromPlaylist": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "playlist": {
+        "type": "String"
+      }
+    }
+  },
+  "addedTracksToQueueCount": "å°‡ {count} æ›²ç›®åŠ å…¥åˆ°ä½‡åˆ—ä¸­",
+  "@addedTracksToQueueCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "downloadPlaylist": "ä¸‹è¼‰æ’­æ”¾åˆ—è¡¨",
+  "signInWithGoogle": "ä½¿ç”¨ Google ç™»å…¥",
+  "signInToUseJams": "ç™»å…¥ä»¥ä½¿ç”¨ Jams",
+  "listenTogetherRealtime": "èˆ‡æœ‹å‹ä¸€èµ·å³æ™‚è†è½",
+  "signInGoogleToStartOrJoinJam": "ä½¿ç”¨ Google ç™»å…¥å³å¯é–‹å§‹æˆ–åŠ å…¥èˆ‡å¥½å‹ä¸€èµ·é€²è¡Œçš„ Jam æœƒè©±",
+  "listenTogether": "ä¸€èµ·è†è½",
+  "listenWithFriendsInSync": "èˆ‡æœ‹å‹åŒæ­¥è†è½",
+  "sameSongSameMoment": "åŒä¸€é¦–æ­Œï¼ŒåŒä¸€æ™‚åˆ»",
+  "startJam": "é–‹å§‹å³èˆˆè¡¨æ¼”",
+  "createSessionAndInviteFriends": "å»ºç«‹æœƒè©±ä¸¦é‚€è«‹å¥½å‹",
+  "joinJam": "åƒåŠ æžœé†¬æ´»å‹•",
+  "enterSixDigitCode": "è¼¸å…¥6ä½æ•¸å­—ä»£ç¢¼",
+  "join": "åŠ å…¥",
+  "shareThisCode": "åˆ†äº«æ­¤ç¨‹å¼ç¢¼",
+  "codeCopied": "ç¨‹å¼ç¢¼å·²è¤‡è£½ï¼",
+  "youAreHost": "ä½ æ˜¯ä¸»æŒäºº",
+  "hostedBy": "ä¸»æŒäººï¼š{name}",
+  "@hostedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "listeningTogetherCount": "ä¸€èµ·è†è½ ({count})",
+  "@listeningTogetherCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "endSession": "çµæŸæœƒè­°",
+  "leaveSession": "é›¢é–‹æœƒè©±",
+  "connected": "å·²é€£æŽ¥",
+  "reconnecting": "é‡æ–°é€£æŽ¥",
+  "retryInSeconds": "åœ¨ {seconds}s å¾Œé‡è©¦",
+  "@retryInSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reconnectingStatus": "é‡æ–°é€£æŽ¥ Â· {suffix}",
+  "@reconnectingStatus": {
+    "placeholders": {
+      "suffix": {
+        "type": "String"
+      }
+    }
+  },
+  "reconnectingAttemptStatus": "é‡æ–°é€£æŽ¥ ({attempt}) Â· {suffix}",
+  "@reconnectingAttemptStatus": {
+    "placeholders": {
+      "attempt": {
+        "type": "int"
+      },
+      "suffix": {
+        "type": "String"
+      }
+    }
+  },
+  "disconnected": "å·²æ–·é–‹é€£æŽ¥",
+  "playing": "æ¼”å¥",
+  "addSongsToPlayTogether": "æ–°å¢žæ­Œæ›²ä»¥ä¸€èµ·æ’­æ”¾",
+  "sessionCreatedCode": "æœƒè©±å·²å»ºç«‹ï¼ä»£ç¢¼ï¼š{code}",
+  "@sessionCreatedCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "noJamFoundForCode": "æœªæ‰¾åˆ°æ­¤ä»£ç¢¼çš„æžœé†¬ã€‚",
+  "hostRole": "ä¸»æŒäºº",
+  "canControl": "å¯ä»¥æŽ§åˆ¶",
+  "listeningStatus": "è½åŠ›",
+  "transferHostQuestion": "è½‰æŽ¥ä¸»æ©Ÿï¼Ÿ",
+  "transferHostMessage": "è®“ {name} æˆç‚ºæ–°ä¸»æ©Ÿï¼Ÿæ‚¨å°‡å¤±åŽ»ä¸»æ©ŸæŽ§åˆ¶ã€‚",
+  "@transferHostMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "transfer": "è½‰ä¹˜",
+  "removeControl": "ç§»é™¤æŽ§åˆ¶",
+  "allowControl": "å…è¨±æŽ§åˆ¶",
+  "makeHost": "åšä¸»æ©Ÿ",
+  "live": "ç›´æ’­",
+  "playbackControlsJam": "æ‚¨çš„æ’­æ”¾æŽ§åˆ¶ Jam",
+  "starting": "é–‹å§‹...",
+  "or": "æˆ–",
+  "joinFriendsJam": "åŠ å…¥æœ‹å‹çš„ Jam",
+  "startJamDescription": "ç™¼èµ· Jam èˆ‡æœ‹å‹åˆ†äº«éŸ³æ¨‚ã€‚\næ¯å€‹äººéƒ½åŒæ­¥è½åˆ°åŒä¸€é¦–æ­Œã€‚",
+  "folderSettings": "è³‡æ–™å¤¾è¨­å®š",
+  "noFoldersAddedYet": "å°šæœªæ–°å¢žè³‡æ–™å¤¾",
+  "addFolder": "æ–°å¢žè³‡æ–™å¤¾",
+  "localMusic": "æœ¬åœ°éŸ³æ¨‚",
+  "scanLocalMusicDescription": "æŽƒææ‚¨çš„è£ç½®ä»¥æŸ¥æ‰¾æœ¬æ©ŸéŸ³æ¨‚æª”æ¡ˆä¸¦é›¢ç·šæ’­æ”¾",
+  "scanForMusic": "æŽƒæéŸ³æ¨‚",
+  "addFolderLowercase": "æ–°å¢žè³‡æ–™å¤¾",
+  "supportedFormats": "æ”¯æ´çš„æ ¼å¼ï¼šMP3ã€FLACã€WAVã€M4Aã€OGG",
+  "songsFromFoldersCount": "{folders} è³‡æ–™å¤¾ä¸­çš„ {songs} é¦–æ­Œæ›²",
+  "@songsFromFoldersCount": {
+    "placeholders": {
+      "songs": {
+        "type": "int"
+      },
+      "folders": {
+        "type": "int"
+      }
+    }
+  },
+  "add": "æ·»åŠ ",
+  "permissionRequired": "éœ€è¦è¨±å¯",
+  "storagePermissionRequiredMessage": "å­˜å–æ‚¨çš„éŸ³æ¨‚æª”æ¡ˆéœ€è¦å„²å­˜æ¬Šé™ã€‚è«‹åœ¨â€œè¨­å®šâ€ä¸­å•Ÿç”¨å®ƒã€‚",
+  "couldNotOpenSettingsPermission": "ç„¡æ³•é–‹å•Ÿè¨­å®šã€‚è«‹æ‰‹å‹•å•Ÿç”¨å„²å­˜æ¬Šé™ã€‚",
+  "openSettings": "é–‹å•Ÿè¨­å®š",
+  "folderAdded": "å·²æ–°å¢žè³‡æ–™å¤¾",
+  "addedFolderScanNow": "æ–°å¢žäº†â€œ{folder}â€ã€‚æ‚¨æƒ³ç¾åœ¨æŽƒæå…¶ä¸­çš„éŸ³æ¨‚å—Žï¼Ÿ",
+  "@addedFolderScanNow": {
+    "placeholders": {
+      "folder": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNow": "ç«‹å³æŽƒæ",
+  "foundSongsCount": "æ‰¾å‡º {count} é¦–æ­Œæ›²",
+  "@foundSongsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "addFolderFirstThenScan": "å…ˆæ–°å¢žè³‡æ–™å¤¾ï¼Œç„¶å¾ŒæŽƒæéŸ³è¨Šæª”æ¡ˆã€‚",
+  "scanFoldersCountDescription": "é€™å°‡æŽƒæ {count} è³‡æ–™å¤¾ä¸­çš„éŸ³è¨Šæª”æ¡ˆã€‚",
+  "@scanFoldersCountDescription": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "foldersToScan": "è¦æŽƒæçš„è³‡æ–™å¤¾ï¼š",
+  "andMoreFolders": "....ä»¥åŠ {count} æ›´å¤š",
+  "@andMoreFolders": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "startScan": "é–‹å§‹æŽƒæ",
+  "foundSongsInFoldersCount": "åœ¨ {folders} è³‡æ–™å¤¾ä¸­æ‰¾åˆ° {songs} é¦–æ­Œæ›²",
+  "@foundSongsInFoldersCount": {
+    "placeholders": {
+      "songs": {
+        "type": "int"
+      },
+      "folders": {
+        "type": "int"
+      }
+    }
+  },
+  "scanningForMusic": "æ­£åœ¨æŽƒæéŸ³æ¨‚...",
+  "filesProgress": "{scanned} / {total} æ–‡ä»¶",
+  "@filesProgress": {
+    "placeholders": {
+      "scanned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "signOut": "é€€å‡º",
+  "signInGoogleProfilePictureJams": "ä½¿ç”¨ Google ç™»å…¥ä»¥å–å¾—æ‚¨çš„å€‹äººè³‡æ–™ç…§ç‰‡ä¸¦å•Ÿç”¨ Jams",
+  "sync": "åŒæ­¥",
+  "lastSynced": "ä¸Šæ¬¡åŒæ­¥ï¼š{time}",
+  "@lastSynced": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncedItems": "å·²åŒæ­¥ {count} é …ç›®",
+  "@syncedItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncing": "æ­£åœ¨åŒæ­¥...",
+  "syncNow": "ç«‹å³åŒæ­¥",
+  "cachedItems": "{count} å¿«å–é …ç›®",
+  "@cachedItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streams": "æµ",
+  "colors": "é¡è‰²",
+  "searches": "æœå°‹æ¬¡æ•¸",
+  "expiredCount": "{count} å·²éŽæœŸ",
+  "@expiredCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cacheCleanupComplete": "å¿«å–æ¸…ç†å®Œæˆ",
+  "cleanUp": "æ¸…ç†",
+  "clearCache": "æ¸…é™¤å¿«å–",
+  "clearCachedMusicDataConfirm": "é€™å°‡æ¸…é™¤æ‰€æœ‰å¿«å–çš„éŸ³æ¨‚è³‡æ–™ã€‚ç¹¼çºŒï¼Ÿ",
+  "clear": "æ¸…é™¤",
+  "cacheCleared": "å¿«å–å·²æ¸…é™¤",
+  "analytics": "åˆ†æž",
+  "hits": "é»žæ“Šæ¬¡æ•¸",
+  "misses": "æœªå‘½ä¸­æ•¸",
+  "network": "ç¶²è·¯",
+  "analyticsReset": "åˆ†æžé‡ç½®",
+  "resetStats": "é‡ç½®çµ±è¨ˆæ•¸æ“š",
+  "cacheHitRate": "å¿«å–å‘½ä¸­çŽ‡",
+  "liked": "å–œæ­¡",
+  "appInfo": "æ‡‰ç”¨ç¨‹å¼è¨Šæ¯",
+  "releaseBuild": "ç™¼å¸ƒç‰ˆæœ¬",
+  "updater": "æ›´æ–°ç¨‹å¼",
+  "available": "å¯ç”¨",
+  "unavailable": "ä¸å¯ç”¨",
+  "loadingCompact": "æ­£åœ¨åŠ è¼‰...",
+  "errorCompact": "éŒ¯èª¤",
+  "none": "ç„¡",
+  "currentPatch": "ç›®å‰è£œä¸",
+  "nextPatch": "ä¸‹ä¸€å€‹è£œä¸",
+  "disconnectYoutubeMusic": "æ–·é–‹ YouTube éŸ³æ¨‚é€£æŽ¥",
+  "disconnectYoutubeMusicQuestion": "æ–·é–‹ YouTube éŸ³æ¨‚é€£ç·šï¼Ÿ",
+  "disconnectYoutubeMusicWarning": "é€™å°‡å¾žæ‡‰ç”¨ç¨‹å¼ä¸­åˆªé™¤æ‚¨çš„ YouTube Music å¸³æˆ¶ã€‚æ‚¨çš„åœ–æ›¸é¤¨è³‡æ–™å°‡è¢«æ¸…é™¤ã€‚",
+  "disconnect": "æ–·é–‹é€£æŽ¥",
+  "syncFailed": "åŒæ­¥å¤±æ•—ï¼š{error}",
+  "@syncFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "justNow": "å‰›æ‰",
+  "minutesAgo": "{count}åˆ†é˜å‰",
+  "@minutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursAgo": "{count} å°æ™‚å‰",
+  "@hoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "{count} å¤©å‰",
+  "@daysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noSongsInTitle": "{title} æ²’æœ‰æ­Œæ›²",
+  "@noSongsInTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "createPlaylistDescription": "å»ºç«‹æ’­æ”¾æ¸…å–®ä¾†æ•´ç†æ‚¨çš„éŸ³æ¨‚",
+  "savedAlbumsFromYoutubeMusic": "å¾ž YouTube Music ä¿å­˜çš„å°ˆè¼¯",
+  "noSavedAlbumsFromYoutubeMusic": "æ²’æœ‰ä¿å­˜ YouTube Music çš„å°ˆè¼¯",
+  "errorLoadingAlbums": "è¼‰å…¥ç›¸ç°¿æ™‚å‡ºéŒ¯",
+  "recentlyPlayed": "æœ€è¿‘çŽ©éŽ",
+  "noAlbumsYet": "é‚„æ²’æœ‰å°ˆè¼¯",
+  "playSomeMusicToSeeAlbumsHere": "æ’­æ”¾ä¸€äº›éŸ³æ¨‚å³å¯åœ¨æ­¤è™•æŸ¥çœ‹å°ˆè¼¯",
+  "subscriptions": "Subscriptions",
+  "subscribedArtists": "è¨‚é–±è—è¡“å®¶",
+  "noSubscribedArtists": "æ²’æœ‰è¨‚é–±çš„è—è¡“å®¶",
+  "errorLoadingArtists": "åŠ è¼‰è—è¡“å®¶æ™‚å‡ºéŒ¯",
+  "recentlyPlayedArtists": "æœ€è¿‘æ¼”å¥çš„è—è¡“å®¶",
+  "noArtistsYet": "é‚„æ²’æœ‰è—è¡“å®¶",
+  "playSomeMusicToSeeArtistsHere": "åœ¨é€™è£¡æ’­æ”¾ä¸€äº›éŸ³æ¨‚ä¾†æ¬£è³žè—è¡“å®¶çš„ä½œå“",
+  "downloading": "æ­£åœ¨ä¸‹è¼‰",
+  "downloadedPlaylists": "ä¸‹è¼‰çš„æ’­æ”¾åˆ—è¡¨",
+  "errorLoadingDownloads": "è¼‰å…¥ä¸‹è¼‰æ™‚å‡ºéŒ¯",
+  "deleteDownload": "åˆªé™¤ä¸‹è¼‰",
+  "deleteDownloadQuestion": "åˆªé™¤ä¸‹è¼‰ï¼Ÿ",
+  "deleteDownloadWarning": "é€™å°‡å¾žæ‚¨çš„è£ç½®ä¸­åˆªé™¤â€œ{title}â€ã€‚æ‚¨å¯ä»¥ç¨å¾Œå†æ¬¡ä¸‹è¼‰ã€‚",
+  "@deleteDownloadWarning": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "deletedTrack": "åˆªé™¤äº†â€œ{title}â€",
+  "@deletedTrack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadedSongsWillAppearHere": "ä¸‹è¼‰çš„æ­Œæ›²å°‡å‡ºç¾åœ¨æ­¤è™•",
+  "createPlaylist": "å»ºç«‹æ’­æ”¾æ¸…å–®",
+  "autoPlaylists": "è‡ªå‹•æ’­æ”¾æ¸…å–®",
+  "likedSongsLabel": "å–œæ­¡çš„æ­Œæ›²",
+  "downloadedFraction": "{downloaded}/{total} ä¸‹è¼‰",
+  "@downloadedFraction": {
+    "placeholders": {
+      "downloaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "more": "æ›´å¤š",
+  "video": "å½±ç‰‡",
+  "forgottenFavorites": "è¢«éºå¿˜çš„æœ€æ„›",
+  "mixedForYou": "ç‚ºä½ æ··åˆ",
+  "myMixOne": "æˆ‘çš„çµ„åˆ 1",
+  "discoverMix": "æŽ¢ç´¢æ··åˆ",
+  "replayMix": "é‡æ’­æ··éŸ³",
+  "newRelease": "æ–°ç™¼å¸ƒ",
+  "chillMix": "å†·å»æ··åˆ",
+  "basedOnYourListening": "æ ¹æ“šæ‚¨çš„è½åŠ›",
+  "newMusicForYou": "ç‚ºæ‚¨æº–å‚™çš„æ–°éŸ³æ¨‚",
+  "yourFavorites": "ä½ çš„æœ€æ„›",
+  "freshTracks": "æ–°é®®æ›²ç›®",
+  "relaxingVibes": "è¼•é¬†çš„æ°›åœ",
+  "musicToGetYouStarted": "è®“æ‚¨å…¥é–€çš„éŸ³æ¨‚",
+  "welcomeUser": "æ­¡è¿Ž{name}",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeFallbackName": "é‚£è£¡",
+  "youtubeMusicLabel": "YouTube éŸ³æ¨‚",
+  "local": "æœ¬åœ°",
+  "recentlyAdded": "æœ€è¿‘æ–°å¢ž",
+  "name": "åç¨±",
+  "duration": "æŒçºŒæ™‚é–“",
+  "searchSongsHint": "æœå°‹æ­Œæ›²...",
+  "noLikedSongs": "æ²’æœ‰å–œæ­¡çš„æ­Œæ›²",
+  "likeSomeSongsToSeeThemHere": "å–œæ­¡ä¸€äº›æ­Œæ›²å¯ä»¥åœ¨é€™è£¡çœ‹åˆ°",
+  "noLocalSongs": "æ²’æœ‰æœ¬åœ°æ­Œæ›²",
+  "scanFoldersToFindLocalMusic": "æŽƒæè³‡æ–™å¤¾ä»¥æŸ¥æ‰¾æœ¬æ©ŸéŸ³æ¨‚",
+  "noResults": "æ²’æœ‰çµæžœ",
+  "tryDifferentKeywords": "å˜—è©¦ä¸åŒçš„é—œéµå­—",
+  "noSongsYet": "é‚„æ²’æœ‰æ­Œæ›²",
+  "playSomeMusicToBuildYourLibrary": "æ’­æ”¾ä¸€äº›éŸ³æ¨‚ä¾†å»ºç«‹æ‚¨çš„éŸ³æ¨‚åº«",
+  "albumNotFound": "æ‰¾ä¸åˆ°ç›¸å†Š",
+  "downloadAlbum": "ä¸‹è¼‰å°ˆè¼¯",
+  "downloadingTracksFromAlbum": "å¾ž {album} ä¸‹è¼‰ {count} æ›²ç›®",
+  "@downloadingTracksFromAlbum": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "album": {
+        "type": "String"
+      }
+    }
+  },
+  "shareAlbumText": "{title} ç”± {artist} æä¾›\n{url}",
+  "@shareAlbumText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "suggestions": "å»ºè­°",
+  "recentSearches": "æœ€è¿‘çš„æœå°‹",
+  "startTypingToSearch": "é–‹å§‹è¼¸å…¥æœå°‹...",
+  "youtubeMusicPlaylists": "YouTube éŸ³æ¨‚æ’­æ”¾åˆ—è¡¨",
+  "errorLoadingPlaylists": "è¼‰å…¥æ’­æ”¾æ¸…å–®æ™‚å‡ºéŒ¯",
+  "yourPlaylists": "æ‚¨çš„æ’­æ”¾æ¸…å–®",
+  "noYoutubeMusicPlaylistsFound": "æ‰¾ä¸åˆ° YouTube Music æ’­æ”¾åˆ—è¡¨",
+  "songCountLabel": "{count, plural, one {# æ­Œæ›²} other {# æ­Œæ›²}}",
+  "@songCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unknownAlbum": "æœªçŸ¥å°ˆè¼¯",
+  "jamCodeExample": "ABC123",
+  "jamCodeHint": "ç¨‹å¼ç¢¼",
+  "yourProfile": "æ‚¨çš„å€‹äººè³‡æ–™",
+  "googleUser": "Googleç”¨æˆ¶",
+  "jamsAndProfile": "æžœé†¬å’Œè¼ªå»“",
+  "yes": "æ˜¯çš„",
+  "no": "ä¸",
+  "foundInSettings": "åœ¨è¨­å®šä¸­æ‰¾åˆ°",
+  "sharePlaylistText": "{title}\n{url}",
+  "@sharePlaylistText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "shareArtistText": "{artist}\n{url}",
+  "@shareArtistText": {
+    "placeholders": {
+      "artist": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "megabytesValue": "{value} MB",
+  "@megabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "gigabytesValue": "{value} GB",
+  "@gigabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "approxMegabytesValue": "~{value} MB",
+  "@approxMegabytesValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "approxKbpsValue": "~{value} kbps",
+  "@approxKbpsValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "secondsShort": "{value}s",
+  "@secondsShort": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "speedMultiplier": "{value}x",
+  "@speedMultiplier": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "history": "æ­·å²è¨˜éŒ„",
+  "historyDescription": "æ‚¨æœ€è¿‘çš„æ”¶è½æ­·å²è¨˜éŒ„",
+  "removeFromPlaylist": "å¾žæ’­æ”¾æ¸…å–®ä¸­ç§»é™¤",
+  "removedFromPlaylist": "å·²å¾žæ’­æ”¾æ¸…å–®ä¸­ç§»é™¤",
+  "deletePlaylist": "åˆªé™¤æ’­æ”¾æ¸…å–®",
+  "deletePlaylistConfirm": "æ‚¨ç¢ºå®šè¦åˆªé™¤æ­¤æ’­æ”¾æ¸…å–®å—Žï¼Ÿ",
+  "delete": "åˆªé™¤"
+}
