@@ -19,7 +19,6 @@ class MainActivity : AudioServiceFragmentActivity() {
     private val JAMS_CHANNEL = "inzx/jams_native"
     private val WIDGET_CHANNEL = "inzx/widget"
     private val MEDIA_SCAN_CHANNEL = "inzx/media_scan"
-    private val UPDATE_CHANNEL = "tuneload/updates"
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
@@ -187,70 +186,6 @@ class MainActivity : AudioServiceFragmentActivity() {
                         result.success(true)
                     } catch (e: Exception) {
                         result.error("SCAN_ERROR", e.message, null)
-                    }
-                }
-
-                else -> result.notImplemented()
-            }
-        }
-
-        // In-app APK update channel: permission checks + launch installer
-        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, UPDATE_CHANNEL).setMethodCallHandler { call, result ->
-            when (call.method) {
-                "canInstallPackages" -> {
-                    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
-                        // Pre-Android 8: no permission required
-                        result.success(true)
-                    } else {
-                        result.success(packageManager.canRequestPackageInstalls())
-                    }
-                }
-
-                "openInstallSettings" -> {
-                    try {
-                        val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
-                            data = Uri.parse("package:$packageName")
-                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        }
-                        startActivity(intent)
-                        result.success(true)
-                    } catch (e: Exception) {
-                        result.error("INSTALL_SETTINGS_ERROR", e.message, null)
-                    }
-                }
-
-                "installApk" -> {
-                    val path = call.argument<String>("path")
-                    if (path == null) {
-                        result.error("BAD_ARGUMENT", "Missing 'path'", null)
-                        return@setMethodCallHandler
-                    }
-                    try {
-                        val file = java.io.File(path)
-                        if (!file.exists()) {
-                            result.error("FILE_NOT_FOUND", "APK not found at $path", null)
-                            return@setMethodCallHandler
-                        }
-
-                        val uri: Uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                            androidx.core.content.FileProvider.getUriForFile(
-                                this,
-                                "com.tuneload.app.fileprovider",
-                                file,
-                            )
-                        } else {
-                            Uri.fromFile(file)
-                        }
-
-                        val intent = Intent(Intent.ACTION_VIEW).apply {
-                            setDataAndType(uri, "application/vnd.android.package-archive")
-                            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        }
-                        startActivity(intent)
-                        result.success(true)
-                    } catch (e: Exception) {
-                        result.error("INSTALL_ERROR", e.message, null)
                     }
                 }
 

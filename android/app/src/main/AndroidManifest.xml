@@ -13,9 +13,6 @@
     
     <!-- Notification permission for download progress (Android 13+) -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-    <!-- Allow the app to prompt the user to enable 'Install unknown apps' (Android 8+) -->
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     
     <!-- Storage permissions for local music files -->
     <!-- For Android 12 and below -->
@@ -129,17 +126,6 @@
         <receiver
             android:name=".widget.MusicWidgetActionReceiver"
             android:exported="false" />
-
-        <!-- FileProvider for in-app APK updates (grants read access to the installer) -->
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.tuneload.app.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
         
         <!-- Android Auto support -->
         <meta-data

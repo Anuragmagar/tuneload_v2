@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <!-- getApplicationDocumentsDirectory() → getFilesDir(); covers the
-         apk_updates/ subfolder used by the in-app updater. -->
-    <files-path
-        name="app_docs"
-        path="." />
-</paths>

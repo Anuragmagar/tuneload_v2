@@ -1,9 +1,8 @@
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart' show kDebugMode, kReleaseMode;
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
-import 'package:package_info_plus/package_info_plus.dart';
 
 class GithubReleaseInfo {
   const GithubReleaseInfo({
@@ -25,7 +24,7 @@ class GithubReleaseInfo {
   final int? assetSize;
 }
 
-/// Checks GitHub releases for a newer store-distributed app version.
+/// Fetches latest release metadata from GitHub (used by What's New dialog).
 class GithubReleaseUpdateService {
   GithubReleaseUpdateService._();
 
@@ -49,68 +48,6 @@ class GithubReleaseUpdateService {
     final fromEnv = dotenv.env['GITHUB_RELEASE_PAGE_URL']?.trim() ?? '';
     if (fromEnv.isNotEmpty) return fromEnv;
     return 'https://github.com/$_repo/releases/latest';
-  }
-
-  Future<GithubReleaseInfo?> checkForNewRelease({bool ignoreReleaseMode = false}) async {
-    if (!kReleaseMode && !ignoreReleaseMode) return null;
-
-    try {
-      final packageInfo = await PackageInfo.fromPlatform();
-      final currentVersion = _normalizeVersion(packageInfo.version);
-
-      if (currentVersion.isEmpty) return null;
-
-      final response = await http
-          .get(
-            Uri.parse(_latestReleaseApi),
-            headers: const {
-              'Accept': 'application/vnd.github+json',
-              'X-GitHub-Api-Version': '2022-11-28',
-              'User-Agent': 'TuneLoad-App-Update-Checker',
-            },
-          )
-          .timeout(const Duration(seconds: 8));
-
-      if (response.statusCode != 200) {
-        if (kDebugMode) {
-          print(
-            'GitHubRelease: API returned ${response.statusCode}, skipping check',
-          );
-        }
-        return null;
-      }
-
-      final decoded = jsonDecode(response.body);
-      if (decoded is! Map<String, dynamic>) return null;
-
-      final tag = (decoded['tag_name'] as String?)?.trim() ?? '';
-      final releaseName = (decoded['name'] as String?)?.trim();
-      final body = (decoded['body'] as String?)?.trim();
-      final htmlUrl = (decoded['html_url'] as String?)?.trim();
-      final latestVersion = _normalizeVersion(tag);
-      final apkAsset = _pickApkAsset(decoded['assets']);
-
-      if (latestVersion.isEmpty) return null;
-
-      final isNewer = _compareSemver(latestVersion, currentVersion) > 0;
-      if (!isNewer) return null;
-
-      return GithubReleaseInfo(
-        latestVersion: latestVersion,
-        releaseUrl: (htmlUrl != null && htmlUrl.isNotEmpty)
-            ? htmlUrl
-            : _fallbackReleaseUrl,
-        downloadUrl: apkAsset?.url ?? _fallbackReleaseUrl,
-        body: body,
-        releaseName: releaseName,
-        assetSize: apkAsset?.size,
-      );
-    } catch (e) {
-      if (kDebugMode) {
-        print('GitHubRelease: Check failed: $e');
-      }
-      return null;
-    }
   }
 
   Future<GithubReleaseInfo?> fetchLatestReleaseInfo() async {
@@ -171,22 +108,6 @@ class GithubReleaseUpdateService {
       v = v.substring(0, dashIndex);
     }
     return v.trim();
-  }
-
-  int _compareSemver(String a, String b) {
-    final aParts = a.split('.').map((e) => int.tryParse(e) ?? 0).toList();
-    final bParts = b.split('.').map((e) => int.tryParse(e) ?? 0).toList();
-    final maxLen = aParts.length > bParts.length
-        ? aParts.length
-        : bParts.length;
-
-    for (var i = 0; i < maxLen; i++) {
-      final aVal = i < aParts.length ? aParts[i] : 0;
-      final bVal = i < bParts.length ? bParts[i] : 0;
-      if (aVal > bVal) return 1;
-      if (aVal < bVal) return -1;
-    }
-    return 0;
   }
 
   ({String url, int? size})? _pickApkAsset(dynamic assetsRaw) {

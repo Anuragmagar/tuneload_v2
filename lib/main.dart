@@ -25,7 +25,6 @@ import 'services/deep_link_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'screens/widgets/whats_new_dialog.dart';
-import 'screens/widgets/update_progress_dialog.dart';
 
 InzxAudioHandler? audioHandler;
 final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
@@ -229,14 +228,7 @@ class _InzxAppState extends ConsumerState<InzxApp> {
 
     if (didPatchUpdate) {
       _showPatchUpdateBanner();
-      return;
     }
-
-    final releaseInfo = await GithubReleaseUpdateService.instance
-        .checkForNewRelease();
-    if (!mounted || releaseInfo == null) return;
-
-    _showNewReleaseBanner(releaseInfo);
   }
 
   Future<void> _checkFirstLaunchChangelog() async {
@@ -277,41 +269,6 @@ class _InzxAppState extends ConsumerState<InzxApp> {
           TextButton(
             onPressed: () => messenger.hideCurrentMaterialBanner(),
             child: Text(l10n.dismiss),
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _showNewReleaseBanner(GithubReleaseInfo releaseInfo) {
-    final messenger = rootScaffoldMessengerKey.currentState;
-    if (messenger == null) return;
-    final l10n = context.l10n;
-
-    messenger.clearMaterialBanners();
-    messenger.showMaterialBanner(
-      MaterialBanner(
-        content: Text(
-          l10n.newVersionAvailableBanner(releaseInfo.latestVersion),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              messenger.hideCurrentMaterialBanner();
-              final navContext = rootNavigatorKey.currentContext;
-              if (navContext == null) return;
-              UpdateProgressDialog.show(
-                navContext,
-                downloadUrl: releaseInfo.downloadUrl,
-                version: releaseInfo.latestVersion,
-                assetSize: releaseInfo.assetSize,
-              );
-            },
-            child: Text(l10n.download),
-          ),
-          TextButton(
-            onPressed: () => messenger.hideCurrentMaterialBanner(),
-            child: Text(l10n.later),
           ),
         ],
       ),
