@@ -28,46 +28,59 @@ class DownloadNotificationService {
   static const int _baseNotificationId = 1000;
 
   /// Initialize the notification service
+  ///
+  /// Never throws: a failing platform channel (e.g. R8-stripped generic
+  /// signatures on release builds) must not break the download flow, so any
+  /// error here is logged and swallowed.
   Future<void> initialize() async {
     if (_isInitialized) return;
-    final l10n = await _resolveL10n();
+    try {
+      final l10n = await _resolveL10n();
 
-    const androidSettings = AndroidInitializationSettings(
-      '@mipmap/ic_launcher',
-    );
-    const initSettings = InitializationSettings(android: androidSettings);
+      const androidSettings = AndroidInitializationSettings(
+        '@mipmap/ic_launcher',
+      );
+      const initSettings = InitializationSettings(android: androidSettings);
 
-    await _notifications.initialize(
-      initSettings,
-      onDidReceiveNotificationResponse: _onNotificationTapped,
-    );
-
-    // Create the notification channel for Android
-    final androidPlugin = _notifications
-        .resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin
-        >();
-
-    if (androidPlugin != null) {
-      await androidPlugin.createNotificationChannel(
-        AndroidNotificationChannel(
-          _channelId,
-          l10n.downloads,
-          description: l10n.downloadNotificationsChannelDescription,
-          importance: Importance.low, // Low so it doesn't make sound
-          showBadge: false,
-        ),
+      await _notifications.initialize(
+        initSettings,
+        onDidReceiveNotificationResponse: _onNotificationTapped,
       );
 
-      // Clear any stale ongoing "downloading…" notifications left behind by a
-      // process that was killed mid-download. Downloads never survive a
-      // process death, so a lingering progress notification can only be a leak.
-      await _notifications.cancelAll();
+      // Create the notification channel for Android
+      final androidPlugin = _notifications
+          .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin
+          >();
 
-      // Request notification permission for Android 13+
-      if (Platform.isAndroid) {
-        await androidPlugin.requestNotificationsPermission();
+      if (androidPlugin != null) {
+        await androidPlugin.createNotificationChannel(
+          AndroidNotificationChannel(
+            _channelId,
+            l10n.downloads,
+            description: l10n.downloadNotificationsChannelDescription,
+            importance: Importance.low, // Low so it doesn't make sound
+            showBadge: false,
+          ),
+        );
+
+        try {
+          // Clear any stale ongoing "downloading…" notifications left behind
+          // by a process that was killed mid-download. Downloads never survive
+          // a process death, so a lingering progress notification can only be
+          // a leak. Wrapped in its own try so this cannot fail initialization.
+          await _notifications.cancelAll();
+        } catch (e) {
+          debugPrint('NotificationService: cancelAll failed (non-fatal): $e');
+        }
+
+        // Request notification permission for Android 13+
+        if (Platform.isAndroid) {
+          await androidPlugin.requestNotificationsPermission();
+        }
       }
+    } catch (e) {
+      debugPrint('NotificationService: initialize failed (non-fatal): $e');
     }
 
     _isInitialized = true;
@@ -106,13 +119,18 @@ class DownloadNotificationService {
       subText: l10n.downloading,
     );
 
-    await _notifications.show(
-      notificationId,
-      trackTitle,
-      l10n.downloadStartingNotification,
-      NotificationDetails(android: androidDetails),
-      payload: trackId,
-    );
+    try {
+      await _notifications.show(
+        notificationId,
+        trackTitle,
+        l10n.downloadStartingNotification,
+        NotificationDetails(android: androidDetails),
+        payload: trackId,
+      );
+    } catch (e) {
+      debugPrint('NotificationService: showDownloadStarted failed '
+          '(non-fatal): $e');
+    }
   }
 
   /// Update download progress notification
@@ -143,13 +161,18 @@ class DownloadNotificationService {
       subText: '$progressPercent%',
     );
 
-    await _notifications.show(
-      notificationId,
-      trackTitle,
-      l10n.downloadingProgress(progressPercent),
-      NotificationDetails(android: androidDetails),
-      payload: trackId,
-    );
+    try {
+      await _notifications.show(
+        notificationId,
+        trackTitle,
+        l10n.downloadingProgress(progressPercent),
+        NotificationDetails(android: androidDetails),
+        payload: trackId,
+      );
+    } catch (e) {
+      debugPrint('NotificationService: updateDownloadProgress failed '
+          '(non-fatal): $e');
+    }
   }
 
   /// Show an indeterminate progress notification while the downloaded file is
@@ -180,13 +203,18 @@ class DownloadNotificationService {
       subText: l10n.converting,
     );
 
-    await _notifications.show(
-      notificationId,
-      trackTitle,
-      l10n.converting,
-      NotificationDetails(android: androidDetails),
-      payload: trackId,
-    );
+    try {
+      await _notifications.show(
+        notificationId,
+        trackTitle,
+        l10n.converting,
+        NotificationDetails(android: androidDetails),
+        payload: trackId,
+      );
+    } catch (e) {
+      debugPrint('NotificationService: showDownloadConverting failed '
+          '(non-fatal): $e');
+    }
   }
 
   /// Show download completed notification
@@ -207,18 +235,23 @@ class DownloadNotificationService {
       icon: '@mipmap/ic_launcher',
     );
 
-    await _notifications.show(
-      notificationId,
-      trackTitle,
-      l10n.downloadCompleteNotification,
-      NotificationDetails(android: androidDetails),
-      payload: trackId,
-    );
+    try {
+      await _notifications.show(
+        notificationId,
+        trackTitle,
+        l10n.downloadCompleteNotification,
+        NotificationDetails(android: androidDetails),
+        payload: trackId,
+      );
 
-    // Auto-dismiss after 3 seconds
-    Future.delayed(const Duration(seconds: 3), () {
-      cancelNotification(trackId);
-    });
+      // Auto-dismiss after 3 seconds
+      Future.delayed(const Duration(seconds: 3), () {
+        cancelNotification(trackId);
+      });
+    } catch (e) {
+      debugPrint('NotificationService: showDownloadCompleted failed '
+          '(non-fatal): $e');
+    }
   }
 
   /// Show download failed notification
@@ -243,13 +276,18 @@ class DownloadNotificationService {
       icon: '@mipmap/ic_launcher',
     );
 
-    await _notifications.show(
-      notificationId,
-      trackTitle,
-      localizeDownloadError(l10n, error),
-      NotificationDetails(android: androidDetails),
-      payload: trackId,
-    );
+    try {
+      await _notifications.show(
+        notificationId,
+        trackTitle,
+        localizeDownloadError(l10n, error),
+        NotificationDetails(android: androidDetails),
+        payload: trackId,
+      );
+    } catch (e) {
+      debugPrint('NotificationService: showDownloadFailed failed '
+          '(non-fatal): $e');
+    }
   }
 
   Future<AppLocalizations> _resolveL10n() async {
@@ -276,12 +314,22 @@ class DownloadNotificationService {
 
   /// Cancel notification for a track
   Future<void> cancelNotification(String trackId) async {
-    final notificationId = _getNotificationId(trackId);
-    await _notifications.cancel(notificationId);
+    try {
+      final notificationId = _getNotificationId(trackId);
+      await _notifications.cancel(notificationId);
+    } catch (e) {
+      debugPrint('NotificationService: cancelNotification failed '
+          '(non-fatal): $e');
+    }
   }
 
   /// Cancel all download notifications
   Future<void> cancelAllNotifications() async {
-    await _notifications.cancelAll();
+    try {
+      await _notifications.cancelAll();
+    } catch (e) {
+      debugPrint('NotificationService: cancelAllNotifications failed '
+          '(non-fatal): $e');
+    }
   }
 }

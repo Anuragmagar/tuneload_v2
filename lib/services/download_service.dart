@@ -1057,7 +1057,7 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
       }
 
       if (tasks.isNotEmpty) {
-        state = state.copyWith(tasks: tasks);
+        state = state.copyWith(tasks: {...state.tasks, ...tasks});
         if (kDebugMode) {
           print(
             'DownloadService: Loaded ${tasks.length} persisted downloads from Hive',
@@ -1356,11 +1356,19 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
     if (state.isDownloading) return;
     if (state.queue.isEmpty) return;
 
-    final nextTrackId = state.queue.first;
-    final task = state.tasks[nextTrackId];
-    if (task == null) return;
-
-    _downloadTrack(task);
+    // Self-heal: a queue id whose task record is missing (e.g. evicted by the
+    // async persisted-restore race after a restart) would otherwise deadlock
+    // the queue forever. Drop the zombie head and keep looking.
+    while (state.queue.isNotEmpty) {
+      final nextTrackId = state.queue.first;
+      final task = state.tasks[nextTrackId];
+      if (task != null) {
+        _downloadTrack(task);
+        return;
+      }
+      final newQueue = List<String>.from(state.queue)..removeAt(0);
+      state = state.copyWith(queue: newQueue);
+    }
   }
 
   bool _isTaskCancelled(String trackId) {
@@ -1549,7 +1557,9 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
 
           partSink = part.file.openWrite(mode: FileMode.writeOnly);
           int partBytes = 0;
-          await for (final chunk in response) {
+          await for (final chunk in response.timeout(
+            const Duration(seconds: 30),
+          )) {
             if (_isTaskCancelled(trackId)) {
               throw const _DownloadCancelledException();
             }
@@ -1636,18 +1646,26 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
       'Downloading "${task.track.title}"...',
     );
 
-    // Show download started notification
-    await _notificationService.showDownloadStarted(
-      task.trackId,
-      task.track.title,
-    );
-
     try {
-      // Get stream format - prefer Opus/WebM (more reliable for YouTube downloads)
-      final result = await _playerUtils.playerResponseForDownload(
+      // Show download started notification - inside try so a failure here can
+      // never leave isDownloading stuck true and stall the queue on restart.
+      await _notificationService.showDownloadStarted(
         task.trackId,
-        quality: _downloadQuality,
+        task.track.title,
       );
+
+      // Get stream format - prefer Opus/WebM (more reliable for YouTube downloads)
+      final result = await _playerUtils
+          .playerResponseForDownload(
+            task.trackId,
+            quality: _downloadQuality,
+          )
+          .timeout(
+            const Duration(seconds: 90),
+            onTimeout: () => throw TimeoutException(
+              'Timed out fetching stream for "${task.track.title}"',
+            ),
+          );
       if (result.isFailure || result.data == null) {
         throw Exception(result.error ?? 'Failed to get stream URL');
       }
@@ -1769,7 +1787,9 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
           request.headers['Accept-Encoding'] = 'identity';
           request.headers['Connection'] = 'keep-alive';
 
-          var response = await _httpClient!.send(request);
+          var response = await _httpClient!
+              .send(request)
+              .timeout(const Duration(seconds: 30));
 
           if (response.statusCode != 200 && response.statusCode != 206) {
             throw Exception('HTTP ${response.statusCode}');
@@ -1783,7 +1803,9 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
             print('DownloadService: Expected total size: $expectedTotal bytes');
           }
 
-          await for (final chunk in response.stream) {
+          await for (final chunk in response.stream.timeout(
+            const Duration(seconds: 30),
+          )) {
             if (_isTaskCancelled(task.trackId)) {
               throw const _DownloadCancelledException();
             }
@@ -1826,7 +1848,9 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
             request.headers['Range'] = 'bytes=$totalDownloaded-';
 
             try {
-              response = await _httpClient!.send(request);
+              response = await _httpClient!
+                  .send(request)
+                  .timeout(const Duration(seconds: 30));
 
               if (response.statusCode != 200 && response.statusCode != 206) {
                 if (kDebugMode) {
@@ -1838,7 +1862,9 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
               }
 
               int chunkBytes = 0;
-              await for (final chunk in response.stream) {
+              await for (final chunk in response.stream.timeout(
+                const Duration(seconds: 30),
+              )) {
                 if (_isTaskCancelled(task.trackId)) {
                   throw const _DownloadCancelledException();
                 }
@@ -2148,12 +2174,23 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
         task.copyWith(status: DownloadStatus.failed, error: e.toString()),
       );
 
-      // Show failure notification
-      await _notificationService.showDownloadFailed(
-        task.trackId,
-        task.track.title,
-        e.toString(),
-      );
+      // Show failure notification. Wrapped in its own try/catch so a
+      // notification-layer error can never skip the queue cleanup below
+      // (which would leave isDownloading true and stall the queue).
+      try {
+        await _notificationService.showDownloadFailed(
+          task.trackId,
+          task.track.title,
+          e.toString(),
+        );
+      } catch (notificationError) {
+        if (kDebugMode) {
+          print(
+            'DownloadService: failure notification failed for ${task.trackId}: '
+            '$notificationError',
+          );
+        }
+      }
 
       // Remove from queue
       final newQueue = List<String>.from(state.queue);
