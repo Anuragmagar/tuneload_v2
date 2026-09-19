@@ -32,6 +32,13 @@ jobs:
       - name: Check Flutter version
         run: flutter --version
 
+      # Flutter 3.44 enables Swift Package Manager by default, but plugins in
+      # this project (haudiotagger 1.3.5, flutter_local_notifications,
+      # flutter_secure_storage) still rely on CocoaPods. Disable SPM so the
+      # ios/Podfile is used instead.
+      - name: Use CocoaPods (disable Swift Package Manager)
+        run: flutter config --no-enable-swift-package-manager
+
       - name: Install CocoaPods
         run: |
           gem install cocoapods --no-document
