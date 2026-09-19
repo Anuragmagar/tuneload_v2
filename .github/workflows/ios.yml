@@ -40,12 +40,11 @@ jobs:
       - name: Provision .env for build
         run: |
           if [ -n "${{ secrets.SUPABASE_URL }}" ]; then
-            cat > .env <<EOF
-            SUPABASE_URL=${{ secrets.SUPABASE_URL }}
-            SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
-            GOOGLE_WEB_CLIENT_ID=${{ secrets.GOOGLE_WEB_CLIENT_ID }}
-            GITHUB_RELEASE_REPO=${{ github.repository }}
-            EOF
+            printf 'SUPABASE_URL=%s\nSUPABASE_ANON_KEY=%s\nGOOGLE_WEB_CLIENT_ID=%s\nGITHUB_RELEASE_REPO=%s\n' \
+              "${{ secrets.SUPABASE_URL }}" \
+              "${{ secrets.SUPABASE_ANON_KEY }}" \
+              "${{ secrets.GOOGLE_WEB_CLIENT_ID }}" \
+              "${{ github.repository }}" > .env
           else
             # Personal-use default: values from .env.example are placeholders
             # and are harmless at compile time; real values (supabase/google)
