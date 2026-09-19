@@ -70,11 +70,13 @@ jobs:
           # into an extra 'haudiotagger.xcframework' folder even though the
           # zip already contains one, so the vendored-frameworks glob matches
           # it twice and CocoaPods errors with "frameworks with conflicting
-          # names: haudiotagger.xcframework". Unzip in place instead.
+          # names: haudiotagger.xcframework". Remove the '-d' target so it
+          # unzips in place. A heredoc keeps the single quotes safe from shell
+          # parsing that would otherwise split the -e argument.
           # The podspec path is resolved from .flutter-plugins-dependencies
           # (same source Flutter's pod helper uses), so it works regardless of
           # where the pub cache lives.
-          ruby -rjson -e '
+          ruby -rjson <<'RUBY'
             deps = JSON.parse(File.read("../.flutter-plugins-dependencies"))
             plugin = deps["plugins"]["ios"].find { |p| p["name"] == "haudiotagger" }
             abort "haudiotagger entry not found in .flutter-plugins-dependencies" unless plugin
@@ -87,7 +89,8 @@ jobs:
             )
             File.write(spec, patched)
             puts "patched #{spec} (changed=#{content != patched})"
-          '
+            puts content.lines.grep(/unzip/).join if content != patched
+          RUBY
           pod install
 
       - name: Build unsigned IPA
