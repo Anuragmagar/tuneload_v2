@@ -71,10 +71,15 @@ jobs:
           # zip already contains one, so the vendored-frameworks glob matches
           # it twice and CocoaPods errors with "frameworks with conflicting
           # names: haudiotagger.xcframework". Unzip in place instead.
-          ruby -e '
-            dir = Dir.glob(File.join(ENV["PUB_CACHE"], "hosted/pub.dev/ha.udiotagger-*/ios")).sort.last
-            abort "haudiotagger ios dir not found" unless dir
-            spec = File.join(dir, "haudiotagger.podspec")
+          # The podspec path is resolved from .flutter-plugins-dependencies
+          # (same source Flutter's pod helper uses), so it works regardless of
+          # where the pub cache lives.
+          ruby -rjson -e '
+            deps = JSON.parse(File.read("../.flutter-plugins-dependencies"))
+            plugin = deps["plugins"]["ios"].find { |p| p["name"] == "haudiotagger" }
+            abort "haudiotagger entry not found in .flutter-plugins-dependencies" unless plugin
+            spec = File.join(plugin["path"], "ios", "haudiotagger.podspec")
+            abort "podspec not found at #{spec}" unless File.exist?(spec)
             content = File.read(spec)
             patched = content.gsub(
               %q{unzip -o ios.zip -d 'haudiotagger.xcframework'},
