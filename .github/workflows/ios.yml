@@ -39,19 +39,14 @@ jobs:
 
       - name: Provision .env for build
         run: |
-          if [ -n "${{ secrets.SUPABASE_URL }}" ]; then
-            printf 'SUPABASE_URL=%s\nSUPABASE_ANON_KEY=%s\nGOOGLE_WEB_CLIENT_ID=%s\nGITHUB_RELEASE_REPO=%s\n' \
-              "${{ secrets.SUPABASE_URL }}" \
-              "${{ secrets.SUPABASE_ANON_KEY }}" \
-              "${{ secrets.GOOGLE_WEB_CLIENT_ID }}" \
-              "${{ github.repository }}" > .env
-          else
-            # Personal-use default: values from .env.example are placeholders
-            # and are harmless at compile time; real values (supabase/google)
-            # only affect runtime features, which are optional.
-            cp .env.example .env
-            sed -i "s|YOUR_GITHUB_OWNER/YOUR_GITHUB_REPO|${{ github.repository }}|" .env
-          fi
+          # .env is a required build asset (listed in pubspec.yaml) but is
+          # git-ignored. Values come from repo secrets when set (personal-use
+          # builds: empty values are harmless at compile time).
+          printf 'SUPABASE_URL=%s\nSUPABASE_ANON_KEY=%s\nGOOGLE_WEB_CLIENT_ID=%s\nGITHUB_RELEASE_REPO=%s\n' \
+            "${{ secrets.SUPABASE_URL }}" \
+            "${{ secrets.SUPABASE_ANON_KEY }}" \
+            "${{ secrets.GOOGLE_WEB_CLIENT_ID }}" \
+            "${{ github.repository }}" > .env
 
       - name: Resolve Dart dependencies
         run: flutter pub get
