@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter/services.dart';
+import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'dart:ui' show PlatformDispatcher;
@@ -262,7 +264,14 @@ class _InzxAppState extends ConsumerState<InzxApp> {
           TextButton(
             onPressed: () {
               // Close the app so the update applies on next launch.
-              SystemNavigator.pop();
+              // Android can pop the system back stack; iOS has no public API,
+              // so hard-exit is used there (necessary for Shorebird OTA
+              // patches which only take effect on a fresh launch).
+              if (defaultTargetPlatform == TargetPlatform.android) {
+                SystemNavigator.pop();
+              } else {
+                exit(0);
+              }
             },
             child: Text(l10n.restart),
           ),

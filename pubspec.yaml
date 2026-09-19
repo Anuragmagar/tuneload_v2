@@ -108,8 +108,9 @@ flutter:
 # Flutter Launcher Icons configuration
 flutter_launcher_icons:
   android: true
-  ios: false
+  ios: true
   image_path: "assets/icon/logo.png"
+  remove_alpha_ios: true
   adaptive_icon_background: "#000000"  # Sleek pitch black dark theme background
   adaptive_icon_foreground: "assets/icon/logo_foreground.png"
   
@@ -118,7 +119,7 @@ flutter_native_splash:
   color: "#000000"  # Black background for splash screen
   image: "assets/splash/logo_splash.png"  # Padded logo asset so headphones don't clip
   android: true
-  ios: false
+  ios: true
   
   # Android specific
   android_12:

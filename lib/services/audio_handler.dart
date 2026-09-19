@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
+import 'package:audio_session/audio_session.dart';
 import 'package:audio_service/audio_service.dart';
 import 'package:just_audio/just_audio.dart';
 import '../models/models.dart';
@@ -754,6 +755,16 @@ class InzxAudioHandler extends BaseAudioHandler with SeekHandler {
 
 /// Initialize audio service with Android Auto grid layout & search support
 Future<InzxAudioHandler> initAudioService() async {
+  // Explicitly configure the shared audio session so iOS uses the playback
+  // category (background audio) and Android gets the correct audio attributes
+  // for music. just_audio queries this session when the player is created.
+  try {
+    final session = await AudioSession.instance;
+    await session.configure(const AudioSessionConfiguration.music());
+  } catch (e) {
+    debugPrint('initAudioService: audio session config failed (non-fatal): $e');
+  }
+
   return await AudioService.init(
     builder: () => InzxAudioHandler(),
     config: AudioServiceConfig(

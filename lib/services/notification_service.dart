@@ -40,7 +40,15 @@ class DownloadNotificationService {
       const androidSettings = AndroidInitializationSettings(
         '@mipmap/ic_launcher',
       );
-      const initSettings = InitializationSettings(android: androidSettings);
+      const iosSettings = DarwinInitializationSettings(
+        requestAlertPermission: true,
+        requestBadgePermission: true,
+        requestSoundPermission: true,
+      );
+      const initSettings = InitializationSettings(
+        android: androidSettings,
+        iOS: iosSettings,
+      );
 
       await _notifications.initialize(
         initSettings,
@@ -79,6 +87,21 @@ class DownloadNotificationService {
           await androidPlugin.requestNotificationsPermission();
         }
       }
+
+      // Request notification permission for iOS (prompt is shown by the
+      // DarwinInitializationSettings above; this resolves the OS decision so
+      // later downloads don't silently fail to show notifications).
+      if (Platform.isIOS) {
+        await _notifications
+            .resolvePlatformSpecificImplementation<
+              IOSFlutterLocalNotificationsPlugin
+            >()
+            ?.requestPermissions(
+              alert: true,
+              badge: true,
+              sound: true,
+            );
+      }
     } catch (e) {
       debugPrint('NotificationService: initialize failed (non-fatal): $e');
     }
@@ -94,6 +117,16 @@ class DownloadNotificationService {
   /// Get unique notification ID for a track
   int _getNotificationId(String trackId) {
     return _baseNotificationId + trackId.hashCode.abs() % 10000;
+  }
+
+  /// iOS presentation options so notifications show while the app is in the
+  /// foreground (by default iOS only surfaces them in Notification Center).
+  DarwinNotificationDetails _iosDetails({bool sound = false}) {
+    return DarwinNotificationDetails(
+      presentAlert: true,
+      presentBadge: false,
+      presentSound: sound,
+    );
   }
 
   /// Show download started notification
@@ -124,7 +157,7 @@ class DownloadNotificationService {
         notificationId,
         trackTitle,
         l10n.downloadStartingNotification,
-        NotificationDetails(android: androidDetails),
+        NotificationDetails(android: androidDetails, iOS: _iosDetails()),
         payload: trackId,
       );
     } catch (e) {
@@ -166,7 +199,7 @@ class DownloadNotificationService {
         notificationId,
         trackTitle,
         l10n.downloadingProgress(progressPercent),
-        NotificationDetails(android: androidDetails),
+        NotificationDetails(android: androidDetails, iOS: _iosDetails()),
         payload: trackId,
       );
     } catch (e) {
@@ -208,7 +241,7 @@ class DownloadNotificationService {
         notificationId,
         trackTitle,
         l10n.converting,
-        NotificationDetails(android: androidDetails),
+        NotificationDetails(android: androidDetails, iOS: _iosDetails()),
         payload: trackId,
       );
     } catch (e) {
@@ -240,7 +273,10 @@ class DownloadNotificationService {
         notificationId,
         trackTitle,
         l10n.downloadCompleteNotification,
-        NotificationDetails(android: androidDetails),
+        NotificationDetails(
+          android: androidDetails,
+          iOS: _iosDetails(sound: true),
+        ),
         payload: trackId,
       );
 
@@ -281,7 +317,10 @@ class DownloadNotificationService {
         notificationId,
         trackTitle,
         localizeDownloadError(l10n, error),
-        NotificationDetails(android: androidDetails),
+        NotificationDetails(
+          android: androidDetails,
+          iOS: _iosDetails(sound: true),
+        ),
         payload: trackId,
       );
     } catch (e) {

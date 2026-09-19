@@ -648,7 +648,11 @@ class DownloadManagerNotifier extends StateNotifier<DownloadManagerState> {
     DownloadTask task,
     String sourcePath,
   ) async {
-    if (!Platform.isAndroid) return (path: null, album: task.track.album);
+    // M4A/AAC conversion runs on Android and iOS (FFmpeg + haudiotagger are
+    // supported on both). Not on other platforms.
+    if (!Platform.isAndroid && !Platform.isIOS) {
+      return (path: null, album: task.track.album);
+    }
 
     // Resolve rich tag metadata (album, year, track/disc numbers) from the
     // YouTube Music API when the song row didn't carry it. Best-effort and
