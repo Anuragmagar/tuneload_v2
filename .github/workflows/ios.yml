@@ -65,7 +65,25 @@ jobs:
 
       - name: Install pods
         working-directory: ios
-        run: pod install
+        run: |
+          # Patch haudiotagger's podspec: its download step unzips ios.zip
+          # into an extra 'haudiotagger.xcframework' folder even though the
+          # zip already contains one, so the vendored-frameworks glob matches
+          # it twice and CocoaPods errors with "frameworks with conflicting
+          # names: haudiotagger.xcframework". Unzip in place instead.
+          ruby -e '
+            dir = Dir.glob(File.join(ENV["PUB_CACHE"], "hosted/pub.dev/ha.udiotagger-*/ios")).sort.last
+            abort "haudiotagger ios dir not found" unless dir
+            spec = File.join(dir, "haudiotagger.podspec")
+            content = File.read(spec)
+            patched = content.gsub(
+              %q{unzip -o ios.zip -d 'haudiotagger.xcframework'},
+              %q{unzip -o ios.zip}
+            )
+            File.write(spec, patched)
+            puts "patched #{spec} (changed=#{content != patched})"
+          '
+          pod install
 
       - name: Build unsigned IPA
         run: |
