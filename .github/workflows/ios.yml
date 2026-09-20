@@ -99,11 +99,12 @@ jobs:
           flutter build ipa --no-codesign --release || true
           # With --no-codesign, flutter skips generating the .ipa and leaves
           # the archive. Build the IPA payload manually from the archive.
-          PAYLOAD=build/ios/ipa/Payload
-          mkdir -p "$PAYLOAD"
-          cp -R build/ios/archive/Runner.xcarchive/Products/Applications/Runner.app "$PAYLOAD/"
-          cd build/ios/ipa && zip -r -q tuneload-unsigned.ipa Payload
-          ls -la build/ios/ipa/
+          ROOT="$GITHUB_WORKSPACE"
+          mkdir -p "$ROOT/build/ios/ipa/Payload"
+          cp -R "$ROOT/build/ios/archive/Runner.xcarchive/Products/Applications/Runner.app" "$ROOT/build/ios/ipa/Payload/"
+          cd "$ROOT/build/ios/ipa"
+          zip -r -q tuneload-unsigned.ipa Payload
+          ls -la "$ROOT/build/ios/ipa/"
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
